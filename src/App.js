@@ -9,23 +9,44 @@ import five from './Images/5.jpg';
 import six from './Images/6.jpg';
 import seven from './Images/7.jpg';
 import eight from './Images/8.jpg';
+import Card from './components/Card';
+import Arrow from './components/Arrow';
+import LeftArrow from './components/LeftArrow';
+import RightArrow from './components/RightArrow';
 
 function App(props)
 {
+
   return (
-      <Carousel showArrows={true}>
-          <div>
-              <img src={one} />
-              <p className="legend">Legend 1</p>
-          </div>
-          <div>
-              <img src={two} />
-              <p className="legend">Legend 2</p>
-          </div>
-          <div>
-              <img src={three} />
-              <p className="legend">Legend 3</p>
-          </div>
+      <Carousel
+      renderArrowPrev={(onClickHandler, hasPrev, label) =>
+          hasPrev && (<LeftArrow onClickHandler={onClickHandler} label={label}/>
+    )}
+    renderArrowNext={(onClickHandler, hasNext, label) =>
+        hasNext && (<RightArrow onClickHandler={onClickHandler} label={label}/>
+  )}
+        useKeyboardArrows={true}
+
+      >
+          <Card
+          image={one}
+          caption="oiwne"
+          />
+          <Card
+          image={two}
+          caption="oiwne"
+
+          />
+          <Card
+          image={three}
+          caption="oiwne"
+
+          />
+          <Card
+          image={four}
+          caption="oiwne"
+
+          />
       </Carousel>
   );
 }
