@@ -19,13 +19,16 @@ function App(props)
 
   return (
       <Carousel
-      renderArrowPrev={(onClickHandler, hasPrev, label) =>
-          hasPrev && (<LeftArrow onClickHandler={onClickHandler} label={label}/>
+          showThumbs={false}
+          showLegend={false}
+
+          renderArrowPrev={(onClickHandler, hasPrev, label) =>
+              hasPrev && (<LeftArrow onClickHandler={onClickHandler} label={label}/>
     )}
-    renderArrowNext={(onClickHandler, hasNext, label) =>
+          renderArrowNext={(onClickHandler, hasNext, label) =>
         hasNext && (<RightArrow onClickHandler={onClickHandler} label={label}/>
   )}
-        useKeyboardArrows={true}
+          useKeyboardArrows={true}
 
       >
           <Card

@@ -1,4 +1,4 @@
-import right from './arrow.svg';
+import right from './right.png';
 
 const RightArrow = (props) => {
   const { label, onClickHandler } = props;

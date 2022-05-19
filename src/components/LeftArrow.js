@@ -1,4 +1,4 @@
-import left from './arrow.svg';
+import left from './left.png';
 
 const LeftArrow = (props) => {
   const { label, onClickHandler } = props;
@@ -23,7 +23,8 @@ const LeftArrow = (props) => {
           ...arrowStyles,
         }}
       >
-        <img src={left} className="arrow" />
+      <img src={left} className="arrow" />
+
       </button>
     </div>
   );

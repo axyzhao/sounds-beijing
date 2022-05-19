@@ -12,19 +12,28 @@ code {
     monospace;
 }
 
-.card {
-  height: 900px;
-  width: 85%;
+.card-container {
+  height: 750px;
+  width: 1200px;
   margin: auto;
+  background: #f3f3f3;
+  display: flex;
+  align-items: center;
+}
+
+.card {
+  margin-left: 100px;
+  margin-right: 100px;
+  height: 100%;
 }
 
 img {
+  position: relative;
   border-radius: 8px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  height: 900px;
-  width: auto;
+
+  &.card-image {
+    // width: 20px;
+  }
 }
 
 .arrow {
