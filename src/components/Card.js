@@ -5,8 +5,6 @@ const Card = (props) => {
       width: "auto",
       height: "100%",
       margin: "0 auto",
-      textAlign:"left",
-      left: "0",
     }
 
   return (

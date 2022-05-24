@@ -5,7 +5,7 @@ const Arrow = (props) => {
   const { back, label, onClickHandler } = props;
   const arrowStyles: CSSProperties = {
 
-};
+  };
   return (
     <button
       type="button"
