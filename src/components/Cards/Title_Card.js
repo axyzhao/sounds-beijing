@@ -11,9 +11,7 @@ const Title_Card = (props) => {
 
   return (
     <div className="card-container">
-      <div className="card">
       <Label caption={title} />
-      </div>
     </div>
   );
 };

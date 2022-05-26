@@ -9,15 +9,44 @@ import three from './Images/3.jpg';
 import concert from './Images/school_concert.mp4';
 import drums from './Images/drums.mp4';
 
-import Card from './components/Card';
-import Card_Video from './components/Card_Video';
-import Title_Card from './components/Title_Card';
+import jail from './Audio/jail.mp4';
+import jail_pic from './Audio/jail.png';
+
+import waterfall from './Audio/waterfall.wav';
+import waterfall_pic from './Audio/thesis.png';
+
+import boba from './Audio/boba.wav';
+import boba_pic from './Audio/bike.png';
+
+import manzou from './Audio/manzou.wav';
+import manzou_pic from './Audio/bike.png';
+
+import thesis from './Audio/thesis.mp4';
+import thesis_pic from './Audio/thesis.png';
+
+import singer from './Audio/singer.wav';
+import singer_pic from './Audio/bike.png';
+
+import bike from './Audio/bike.mp4';
+import bike_pic from './Audio/bike.png';
+
+import temp from './Audio/temperature.m4a';
+
+import hello from './Audio/hello.m4a';
+
+import Video_Card from './components/Cards/Video_Card';
+import Title_Card from './components/Cards/Title_Card';
+import Sound_Card from './components/Cards/Sound_Card';
 import LeftArrow from './components/Arrows/LeftArrow';
 import RightArrow from './components/Arrows/RightArrow';
 
 function App(props)
 {
 
+  const images = [jail_pic, waterfall_pic, boba_pic,
+    manzou_pic, thesis_pic, singer_pic, bike_pic, bike_pic, bike_pic];
+  const sounds = [jail, waterfall, boba,
+      manzou, thesis, singer, bike, hello, temp];
   return (
       <Carousel
           showThumbs={false}
@@ -36,8 +65,14 @@ function App(props)
           <Title_Card
           title="Sounds of Beijing WIP (Do not distribute)"
           />
-          <Card_Video
+          <Video_Card
           video={drums}
+          caption="Sounds of Beijing > Arjun going off on drums"
+          />
+
+          <Sound_Card
+          images={images}
+          sounds={sounds}
           caption="Sounds of Beijing > Arjun going off on drums"
           />
       </Carousel>
