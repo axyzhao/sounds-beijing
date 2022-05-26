@@ -11,9 +11,9 @@ import drums from './Images/drums.mp4';
 
 import Card from './components/Card';
 import Card_Video from './components/Card_Video';
-import Arrow from './components/Arrow';
-import LeftArrow from './components/LeftArrow';
-import RightArrow from './components/RightArrow';
+import Title_Card from './components/Title_Card';
+import LeftArrow from './components/Arrows/LeftArrow';
+import RightArrow from './components/Arrows/RightArrow';
 
 function App(props)
 {
@@ -22,6 +22,7 @@ function App(props)
       <Carousel
           showThumbs={false}
           showLegend={false}
+          transitionTime={0}
 
           renderArrowPrev={(onClickHandler, hasPrev, label) =>
               hasPrev && (<LeftArrow onClickHandler={onClickHandler} label={label}/>
@@ -32,30 +33,12 @@ function App(props)
           useKeyboardArrows={true}
 
       >
-          <Card
-          image={one}
-          caption="oiwne"
-          />
-          <Card
-          image={two}
-          caption="oiwne"
-
-          />
-          <Card
-          image={three}
-          caption="oiwne"
-          />
-          <Card_Video
-          video={concert}
-          caption="oiwne"
+          <Title_Card
+          title="Sounds of Beijing WIP (Do not distribute)"
           />
           <Card_Video
           video={drums}
-          caption="oiwne"
-          />
-          <Card
-          image={three}
-          caption="oiwne"
+          caption="Sounds of Beijing > Arjun going off on drums"
           />
       </Carousel>
   );
