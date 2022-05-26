@@ -1,6 +1,7 @@
 {
   "name": "sounds-beijing",
   "version": "0.1.0",
+  "homepage": "https://alzhao.com/sounds-beijing",
   "private": true,
   "dependencies": {
     "@mui/icons-material": "^5.8.0",
