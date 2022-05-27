@@ -9,7 +9,7 @@ const LeftArrow = (props) => {
       background: "none",
       border: "none",
       top: "50%",
-      width: "150px",
+      width: "100px",
 
       transform: "translateY(-50%)",
       zIndex: 2,

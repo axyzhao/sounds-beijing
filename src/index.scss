@@ -16,7 +16,9 @@ code {
   height: 750px;
   width: 1200px;
   margin: auto;
-  background: #f3f3f3;
+  // border: solid;
+  // border-width: 2px;
+  // border-color: black;
 
 }
 
@@ -43,7 +45,9 @@ code {
 h1 {
   display: block;
   text-align: left;
-  padding: 10px;
+  padding: 12px;
+  font-size: 14px;
+  font: 'Times';
 }
 
 img {
@@ -53,17 +57,35 @@ img {
 
 }
 button {
+  border-width: 0px;
+  background-color: white;
   &.isActive {
     border-color: green;
     border-width: 3px;
-    background-color: white;
   }
 }
 
+.textbox {
+  vertical-align: center;
+  margin: 0px 64px;
+  height: 40px;
+  border: solid;
+  border-color: #800080;
+  border-width: 1.5px;
+}
+
+p {
+  margin: 8px;
+}
+
 .arrow {
-  height: 150px;
+  height: 100px;
   background: none;
-  border: none
+  border: solid;
+  border-width: 1px;
+  border-color: gray;
+  border-radius: 0px;
+
 }
 
 .arrow-container {

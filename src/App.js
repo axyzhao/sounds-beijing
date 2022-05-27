@@ -69,13 +69,15 @@ function App(props)
           />
           <Video_Card
           video={drums}
-          caption="Sounds of Beijing > Arjun going off on drums"
+          caption="SOUNDS OF BEIJING > Arjun going off on drums"
+          copy="Tsinghua is full of sounds and sights. Click on an image to hear its sound. Click again to pause."
           />
 
           <Sound_Card
           images={images}
           sounds={sounds}
           caption="Sounds of Beijing > Select your sound on Tsinghua"
+          copy="Tsinghua is full of sounds and sights. Click on an image to hear its sound. Click again to pause."
           />
       </Carousel>
   );

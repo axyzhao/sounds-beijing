@@ -1,9 +1,10 @@
 import { Player } from 'video-react';
 import Label from './Label.js';
+import Textbox from './Textbox.js';
 
 const Video_Card = (props) => {
 
-  const { video, caption } = props;
+  const { video, caption, copy } = props;
   const captionStyles: CSSProperties = {
       position: "relative",
       width: "100%",
@@ -17,6 +18,8 @@ const Video_Card = (props) => {
   return (
     <div className="card-container">
     <Label caption={caption} />
+    <Textbox copy={copy} />
+
       <div className="card">
       <div
         className="video-container"
