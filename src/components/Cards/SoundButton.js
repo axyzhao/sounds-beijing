@@ -3,7 +3,7 @@ import { useState } from 'react';
 import classNames from 'classnames/bind';
 
 const SoundButton = (props) => {
-  const { sound, image, imgStyles } = props;
+  const { sound, image, imgStyles, caption, setText } = props;
 
   const [play, { stop }] = useSound(sound, {interrupt: true,});
   const [status, setStatus] = useState(false);
@@ -15,6 +15,7 @@ const SoundButton = (props) => {
     } else {
       play();
       setStatus(true);
+      setText(caption);
     }
   }
 

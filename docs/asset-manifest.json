@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/sounds-beijing/static/css/main.b7923e27.css",
-    "main.js": "/sounds-beijing/static/js/main.81739579.js",
+    "main.css": "/sounds-beijing/static/css/main.f3d6b6e2.css",
+    "main.js": "/sounds-beijing/static/js/main.13e934c4.js",
     "static/js/845.ae9af00c.chunk.js": "/sounds-beijing/static/js/845.ae9af00c.chunk.js",
     "static/js/787.12425ee5.chunk.js": "/sounds-beijing/static/js/787.12425ee5.chunk.js",
     "static/media/bike.mp4": "/sounds-beijing/static/media/bike.d4fb85e1fd37cb81a813.mp4",
@@ -23,13 +23,13 @@
     "static/media/temperature.m4a": "/sounds-beijing/static/media/temperature.ca5d99d2e7c5e058db53.m4a",
     "static/media/hello.m4a": "/sounds-beijing/static/media/hello.992eb7f171c1b3ad1eb7.m4a",
     "index.html": "/sounds-beijing/index.html",
-    "main.b7923e27.css.map": "/sounds-beijing/static/css/main.b7923e27.css.map",
-    "main.81739579.js.map": "/sounds-beijing/static/js/main.81739579.js.map",
+    "main.f3d6b6e2.css.map": "/sounds-beijing/static/css/main.f3d6b6e2.css.map",
+    "main.13e934c4.js.map": "/sounds-beijing/static/js/main.13e934c4.js.map",
     "845.ae9af00c.chunk.js.map": "/sounds-beijing/static/js/845.ae9af00c.chunk.js.map",
     "787.12425ee5.chunk.js.map": "/sounds-beijing/static/js/787.12425ee5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b7923e27.css",
-    "static/js/main.81739579.js"
+    "static/css/main.f3d6b6e2.css",
+    "static/js/main.13e934c4.js"
   ]
 }

@@ -57,6 +57,10 @@ p {
   &.label {
     padding-bottom: 4px;
   }
+
+  &.copy {
+    padding: 12px;
+  }
 }
 
 tspan {
@@ -104,11 +108,15 @@ button {
   height: 100px;
   border: solid;
   border-color: #800080;
-  background-color: #cbc3e3;
+  background-color: #e9d3ff;
   border-width: 0px;
   border-radius: 12px;
   // border-width: 1.5px;
   // background-color: white;
+
+  p {
+    opacity: 1;
+  }
 
 }
 

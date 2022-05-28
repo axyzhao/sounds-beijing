@@ -1,8 +1,8 @@
 const Textbox = (props) => {
-  const { copy } = props;
+  const { copy, id } = props;
   return (
-    <div className="textbox">
-      <p>{copy}</p>
+    <div id={id} className="textbox">
+      <p className="copy">{copy}</p>
     </div>
   );
 };

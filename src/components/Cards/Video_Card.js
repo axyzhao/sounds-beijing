@@ -5,7 +5,7 @@ import Title from './Text/Title';
 
 const Video_Card = (props) => {
 
-  const { video, copy } = props;
+  const { video, copy, index } = props;
   const captionStyles: CSSProperties = {
       position: "relative",
       width: "100%",
@@ -25,7 +25,7 @@ const Video_Card = (props) => {
     <div className="card-container">
       <Label caption={caption} />
       <Title title={title} author={author} />
-      <Textbox copy={text} />
+      <Textbox id={`${index}`} copy={text} />
 
       <div className="card">
       <div

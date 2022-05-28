@@ -48,6 +48,7 @@ function App(props)
           video={drums}
           caption="Drumming"
           copy={slides[0]}
+          index={0}
           />
 
           <Sound_Card
@@ -55,6 +56,7 @@ function App(props)
           sounds={sounds}
           captions={captions}
           copy={slides[1]}
+          index={1}
           />
 
         </Carousel>
