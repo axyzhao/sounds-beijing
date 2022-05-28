@@ -14,7 +14,6 @@ code {
 
 .card-container {
   height: 750px;
-  width: 1200px;
   margin: auto;
   // border: solid;
   // border-width: 2px;
@@ -25,7 +24,6 @@ code {
 .video-container {
     flex: 1;
     height: 100%;
-    width: 320px;
     display: flex;
     justify-content: center;
 }」
@@ -115,4 +113,12 @@ p {
   height: 75%;
   width: 90%;
   margin-left: 5%;
+}
+
+footer {
+  bottom: 0;
+  top: auto;
+  display: block;
+  position: absolute;
+  width: 100%;
 }

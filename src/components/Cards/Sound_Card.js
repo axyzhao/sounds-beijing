@@ -15,7 +15,7 @@ const Sound_Card = (props) => {
     <div className="card-container">
       <Label caption={caption} />
       <Textbox copy={copy} />
-      <div className="card" style={{"text-align": "center"}}>
+      <div className="card" style={{"textAlign": "center"}}>
         <div className="table">
           <div
             className="row"

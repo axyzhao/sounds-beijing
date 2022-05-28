@@ -1,4 +1,5 @@
 import ProgressBar from "@ramonak/react-progress-bar";
+import ReactDOM from 'react-dom';
 
 const Progress = (props) => {
   const { current, total } = props;
@@ -6,20 +7,22 @@ const Progress = (props) => {
     position: "absolute",
     top: "730px",
     right: "0px",
-
     }
 
-  return (
-    <div className="hello" style={barStyles}>
+  const root = document.getElementById('root');
+
+  return ReactDOM.createPortal(
+    <footer>
       <ProgressBar
         completed={current}
         maxCompleted={total}
         labelSize="0px"
         height="20px"
         borderRadius="0px"
-        width="1840px"
+        baseBgColor="black"
       />
-    </div>
+    </footer>,
+    root
   );
 };
 
