@@ -1,20 +1,27 @@
-import Label from './Label.js';
 import SoundButton from './SoundButton.js';
-import Textbox from './Textbox.js';
-
+import Label from './Text/Label';
+import Title from './Text/Title';
+import Textbox from './Text/Textbox';
 const Sound_Card = (props) => {
 
-  const { images, sounds, caption, copy } = props;
+  const { images, sounds, copy } = props;
   const imgStyles: CSSProperties = {
-    height: "180px",
-    width: "180px",
+    height: "160px",
+    width: "160px",
     margin: "0 auto",
-    }
+  }
+
+  const caption = copy['caption'];
+  const title = copy['title'];
+  const author = copy['author'];
+  const text = copy['text'];
 
   return (
     <div className="card-container">
       <Label caption={caption} />
-      <Textbox copy={copy} />
+      <Title title={title} author={author} />
+
+      <Textbox copy={text} />
       <div className="card" style={{"textAlign": "center"}}>
         <div className="table">
           <div

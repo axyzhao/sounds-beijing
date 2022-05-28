@@ -1,10 +1,11 @@
 import { Player } from 'video-react';
-import Label from './Label.js';
-import Textbox from './Textbox.js';
+import Label from './Text/Label';
+import Textbox from './Text/Textbox';
+import Title from './Text/Title';
 
 const Video_Card = (props) => {
 
-  const { video, caption, copy } = props;
+  const { video, copy } = props;
   const captionStyles: CSSProperties = {
       position: "relative",
       width: "100%",
@@ -15,10 +16,16 @@ const Video_Card = (props) => {
         textAlign: "center",
       }
 
+  const caption = copy['caption'];
+  const title = copy['title'];
+  const author = copy['author'];
+  const text = copy['text'];
+
   return (
     <div className="card-container">
-    <Label caption={caption} />
-    <Textbox copy={copy} />
+      <Label caption={caption} />
+      <Title title={title} author={author} />
+      <Textbox copy={text} />
 
       <div className="card">
       <div
@@ -45,16 +52,7 @@ const Video_Card = (props) => {
             autoplay={true}
           />
       </div>
-
       </div>
-      {/*      <p
-            className="legend"
-            style={captionStyles}
-            >
-            {caption}
-            </p>*/}
-
-
     </div>
   );
 };

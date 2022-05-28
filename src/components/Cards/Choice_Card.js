@@ -1,6 +1,7 @@
-import Label from './Label.js';
-import SoundButton from './SoundButton.js';
-import Textbox from './Textbox.js';
+import Label from './Text/Label';
+import Textbox from './Text/Textbox';
+
+import SoundButton from './SoundButton';
 
 const Sound_Card = (props) => {
 

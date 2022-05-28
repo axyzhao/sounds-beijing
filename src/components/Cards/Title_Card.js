@@ -1,4 +1,4 @@
-import Label from './Label.js';
+import Label from './Text/Label';
 
 const Title_Card = (props) => {
 

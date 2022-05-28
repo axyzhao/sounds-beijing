@@ -9,7 +9,7 @@ const LeftArrow = (props) => {
       background: "none",
       border: "none",
       top: "50%",
-      width: "100px",
+      width: "50px",
 
       transform: "translateY(-50%)",
       zIndex: 2,
@@ -25,7 +25,7 @@ const LeftArrow = (props) => {
           ...arrowStyles,
         }}
       >
-      <img src={left} className="arrow" />
+      <img src={left} style={{height: "50px", width: "40px"}} className="arrow" />
 
       </button>
     </div>

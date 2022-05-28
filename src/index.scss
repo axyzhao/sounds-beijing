@@ -21,6 +21,16 @@ code {
 
 }
 
+a {
+  color: gray;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+
+}
+
 .video-container {
     flex: 1;
     height: 100%;
@@ -40,12 +50,37 @@ code {
   display: flex;
 }
 
-h1 {
-  display: block;
+p {
   text-align: left;
-  padding: 12px;
-  font-size: 14px;
-  font: 'Times';
+  margin: 0 8px;
+
+  &.label {
+    padding-bottom: 4px;
+  }
+}
+
+tspan {
+  text-align: left;
+  vertical-align: center;
+
+  &.label-head {
+    font-size: 14px;
+    padding-left: 12px;
+    padding-top: 12px;
+    color: gray;
+  }
+
+  &.label {
+    font-size: 14px;
+    font-weight: 600;
+    padding-top: 12px;
+  }
+
+  &.author {
+    font-size: 14px;
+    color: gray;
+    font-weight: 300;
+  }
 }
 
 img {
@@ -66,21 +101,17 @@ button {
 .textbox {
   vertical-align: center;
   margin: 0px 64px;
-  height: 40px;
+  height: 100px;
   border: solid;
   border-color: #800080;
   border-width: 1.5px;
 }
 
-p {
-  margin: 8px;
-}
-
 .arrow {
-  height: 100px;
+  height: 50px;
   background: none;
   border: solid;
-  border-width: 1px;
+  border-width: 2px;
   border-color: gray;
   border-radius: 0px;
 
@@ -121,4 +152,9 @@ footer {
   display: block;
   position: absolute;
   width: 100%;
+}
+
+h1 {
+  margin: 8px;
+  font-size: 20px;
 }

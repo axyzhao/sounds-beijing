@@ -5,6 +5,8 @@ import "video-react/dist/video-react.css"; // import css
 import { Carousel } from 'react-responsive-carousel';
 import Import from './Import';
 
+import copy from './copy.json';
+
 import drums from './Images/drums.mp4';
 import Video_Card from './components/Cards/Video_Card';
 import Title_Card from './components/Cards/Title_Card';
@@ -19,6 +21,9 @@ function App(props)
   const results = Import();
   const images = results[0];
   const sounds = results[1];
+  const captions = copy["sound_captions"];
+  const slides = copy['slides'];
+
   return (
     <div>
       <Carousel
@@ -37,19 +42,19 @@ function App(props)
 
       >
           <Title_Card
-          title="Sounds of Beijing WIP (Do not distribute)"
+          title="WIP (Do not distribute)"
           />
           <Video_Card
           video={drums}
-          caption="SOUNDS OF BEIJING > Arjun going off on drums"
-          copy="Tsinghua is full of sounds and sights. Click on an image to hear its sound. Click again to pause."
+          caption="Drumming"
+          copy={slides[0]}
           />
 
           <Sound_Card
           images={images}
           sounds={sounds}
-          caption="Sounds of Beijing > Select your sound on Tsinghua"
-          copy="Tsinghua is full of sounds and sights. Click on an image to hear its sound. Click again to pause."
+          captions={captions}
+          copy={slides[1]}
           />
 
         </Carousel>
