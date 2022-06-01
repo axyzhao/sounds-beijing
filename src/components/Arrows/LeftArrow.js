@@ -5,12 +5,15 @@ const LeftArrow = (props) => {
 
   const arrowStyles: CSSProperties = {
       position: "absolute",
-      left: 0,
+      left: "8px",
       background: "none",
       border: "none",
       top: "50%",
       width: "50px",
-
+      height: "150px",
+      border: "solid",
+      borderWidth: "2px",
+      borderColor: "gray",
       transform: "translateY(-50%)",
       zIndex: 2,
     }

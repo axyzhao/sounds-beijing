@@ -32,7 +32,6 @@ const Video_Card = (props) => {
         className="video-container"
       >
           <Player
-            muted
             fluid={false}
             src={video}
             height="78%"

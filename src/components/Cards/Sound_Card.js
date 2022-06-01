@@ -23,7 +23,7 @@ const Sound_Card = (props) => {
     <div className="card-container">
       <Label className={caption} caption={caption} />
       <Title title={title} author={author} />
-      <Textbox copy={text} />
+      <Textbox copy={text} type="long" />
       <div className="card" style={{"textAlign": "center"}}>
         <div className="table">
           <div

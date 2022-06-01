@@ -11,9 +11,11 @@ const Title_Card = (props) => {
       <div className="title">
         <h1 className="big"> Sounds of Beijing </h1>
         <h3 className="byline"> By Alex Zhao and Yucheng Tang</h3>
-        <h3 className="byline"> 文 ｜ 赵星宇， 汤禹成 </h3>
+        <h3 className="byline"> 策划与设计 ｜ 汤禹成 赵星宇</h3>
 
-        <h3> We spent a year in Beijing, immersed in sounds and sights.</h3>
+        <h3 className="subtitle">
+        We spent a year in Beijing, immersed in sounds and sights both strange and familiar.
+        </h3>
         <p className="italic"> Click the arrows or hit your keyboard arrows to navigate the exhibit.</p>
 
       </div>

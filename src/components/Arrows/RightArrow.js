@@ -5,11 +5,15 @@ const RightArrow = (props) => {
 
   const arrowStyles: CSSProperties = {
       position: "absolute",
-      right: 0,
-      background: "none",
+      right: "8px",
+      height: "150px",
+      background: "white",
       border: "none",
       top: "50%",
       width: "50px",
+      border: "solid",
+      borderWidth: "2px",
+      borderColor: "gray",
       transform: "translateY(-50%)",
     }
 

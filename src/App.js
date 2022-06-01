@@ -8,7 +8,7 @@ import Import from './Import';
 import copy from './copy.json';
 
 import drums from './Images/drums.mp4';
-import Video_Card from './components/Cards/Video_Card';
+import Video_Card_One from './components/Cards/Video_Card_One';
 import Title_Card from './components/Cards/Title_Card';
 import Sound_Card from './components/Cards/Sound_Card';
 import LeftArrow from './components/Arrows/LeftArrow';
@@ -45,7 +45,7 @@ function App(props)
             copy={slides[0]}
             index={0}
           />
-          <Video_Card
+          <Video_Card_One
             video={drums}
             copy={slides[1]}
             index={1}

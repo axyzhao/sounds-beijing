@@ -1,7 +1,9 @@
+import classNames from 'classnames';
+
 const Textbox = (props) => {
-  const { copy, id } = props;
+  const { copy, id, type } = props;
   return (
-    <div id={id} className="textbox">
+    <div id={id} className={classNames(type, {"textbox": true})}>
       <p className="copy">{copy}</p>
     </div>
   );
