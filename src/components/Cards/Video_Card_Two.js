@@ -4,8 +4,8 @@ import Textbox from './Text/Textbox';
 import Title from './Text/Title';
 import classNames from "classnames";
 
-const Video_Card_One = (props) => {
-  const { video, copy, index } = props;
+const Video_Card_Two = (props) => {
+  const { video1, video2, copy, index } = props;
 
   const caption = copy['caption'];
   const title = copy['title'];
@@ -17,9 +17,9 @@ const Video_Card_One = (props) => {
       <Label caption={caption} />
       <div className="card">
           <div className="cell">
-                <div className={classNames({"video-container": true, one: true})}>
+          <div className={classNames({"video-container": true, two: true})}>
                     <Player
-                      src={video}
+                      src={video1}
                       autoplay={true}
                     />
                 </div>
@@ -34,9 +34,17 @@ const Video_Card_One = (props) => {
                 <Textbox id={`${index}`} copy={text} type="tall"/>
               </div>
           </div>
+          <div className="cell">
+          <div className={classNames({"video-container": true, two: true})}>
+              <Player
+                src={video2}
+                autoplay={true}
+              />
+          </div>
+          </div>
         </div>
     </div>
   );
 };
 
-export default Video_Card_One;
+export default Video_Card_Two;

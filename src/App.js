@@ -9,6 +9,8 @@ import copy from './copy.json';
 
 import drums from './Images/drums.mp4';
 import Video_Card_One from './components/Cards/Video_Card_One';
+import Video_Card_Two from './components/Cards/Video_Card_Two';
+
 import Title_Card from './components/Cards/Title_Card';
 import Sound_Card from './components/Cards/Sound_Card';
 import LeftArrow from './components/Arrows/LeftArrow';
@@ -50,13 +52,19 @@ function App(props)
             copy={slides[1]}
             index={1}
           />
+          <Video_Card_Two
+            video1={drums}
+            video2={drums}
+            copy={slides[1]}
+            index={2}
+          />
 
           <Sound_Card
             images={images}
             sounds={sounds}
             captions={captions}
             copy={slides[2]}
-            index={2}
+            index={3}
           />
 
         </Carousel>
