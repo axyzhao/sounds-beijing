@@ -1,9 +1,8 @@
 {"slides":
-  [{"caption": "Drumming", "title": "test", "author": "Alex",
-    "text": "Tsinghua is full of sounds and sights. Click on an image to hear its sound. Click again to pause."
-   }, {"caption": "Tsinghua University", "title": "Sounds of Tsinghua", "author": "Alex, Yucheng",
-     "text": "Tsinghua is full of sounds and sights. Click on an image to hear its sound. Click again to pause."
-    }],
+  [{"caption": "Drumming", "title": "test", "author": "Alex", "text": "Tsinghua is full of sounds and sights. Click on an image to hear its sound. Click again to pause."
+   }, {"caption": "Drumming", "title": "test", "author": "Alex", "text": "Tsinghua is full of sounds and sights. Click on an image to hear its sound. Click again to pause."
+    }, {"caption": "Drumming", "title": "test", "author": "Alex", "text": "Tsinghua is full of sounds and sights. Click on an image to hear its sound. Click again to pause."
+     }],
   "sound_captions":
   ["Tsinghua construction workers putting up walls around campus. These walls block off the fences to prevent waimai from entering.",
      "Waterfall on the island in the west part of campus. Many a picnic was had here.",

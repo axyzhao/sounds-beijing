@@ -42,21 +42,21 @@ function App(props)
 
       >
           <Title_Card
-          title="WIP (Do not distribute)"
+            copy={slides[0]}
+            index={0}
           />
           <Video_Card
-          video={drums}
-          caption="Drumming"
-          copy={slides[0]}
-          index={0}
+            video={drums}
+            copy={slides[1]}
+            index={1}
           />
 
           <Sound_Card
-          images={images}
-          sounds={sounds}
-          captions={captions}
-          copy={slides[1]}
-          index={1}
+            images={images}
+            sounds={sounds}
+            captions={captions}
+            copy={slides[2]}
+            index={2}
           />
 
         </Carousel>

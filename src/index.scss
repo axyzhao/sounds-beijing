@@ -15,10 +15,6 @@ code {
 .card-container {
   height: 750px;
   margin: auto;
-  // border: solid;
-  // border-width: 2px;
-  // border-color: black;
-
 }
 
 a {
@@ -53,6 +49,7 @@ a:hover {
 p {
   text-align: left;
   margin: 0 8px;
+  font-family: "Palatino";
 
   &.label {
     padding-bottom: 4px;
@@ -111,12 +108,6 @@ button {
   background-color: #e9d3ff;
   border-width: 0px;
   border-radius: 12px;
-  // border-width: 1.5px;
-  // background-color: white;
-
-  p {
-    opacity: 1;
-  }
 
 }
 
@@ -142,7 +133,6 @@ button {
   padding: 10px 4px;
 }
 
-/* Create two equal columns that sits next to each other */
 .column {
   flex: 33%;
   padding: 0 4px;
@@ -170,4 +160,38 @@ footer {
 h1 {
   margin: 8px;
   font-size: 20px;
+  font-family: "Palatino";
+
+  &.big {
+    font-size: 84px;
+  }
+}
+
+.title-card {
+  background-image: url("./Images/bj_background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.title {
+  color: white;
+  width: 100%;
+  padding: 10px 50px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+h3 {
+  font-family: Calibri, sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+p {
+  font-style: italic;
+  text-align: center;
 }
