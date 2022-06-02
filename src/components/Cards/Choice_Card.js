@@ -1,22 +1,38 @@
+import ChoiceButton from './ChoiceButton.js';
 import Label from './Text/Label';
+import Title from './Text/Title';
 import Textbox from './Text/Textbox';
+import {useState} from 'react';
+import useSound from 'use-sound';
 
-import SoundButton from './SoundButton';
+const Choice_Card = (props) => {
 
-const Sound_Card = (props) => {
-
-  const { images, sounds, caption, copy } = props;
+  const { images, sounds, captions, copy, index } = props;
   const imgStyles: CSSProperties = {
-    height: "180px",
-    width: "180px",
+    height: "120px",
+    width: "200px",
     margin: "0 auto",
+  }
+
+  const mysteryStyles: CSSProperties = {
+      width: "200px",
+      margin: "auto",
     }
+
+  const [play, { stop }] = useSound(sounds[0], {interrupt: true,});
+
+  const [text, setText] = useState(copy['text']);
+
+  const caption = copy['caption'];
+  const title = copy['title'];
+  const author = copy['author'];
 
   return (
     <div className="card-container">
-      <Label caption={caption} />
-      <Textbox copy={copy} />
-      <div className="card" style={{"text-align": "center"}}>
+      <Label className={caption} caption={caption} />
+      <Title title={title} author={author} />
+      <img style={mysteryStyles} src={images[0]} />
+      <div className="card" style={{"textAlign": "center"}}>
         <div className="table">
           <div
             className="row"
@@ -24,17 +40,29 @@ const Sound_Card = (props) => {
             <div
               className="column"
             >
-              <SoundButton sound={sounds[0]} image={images[0]} imgStyles={imgStyles} />
+              <ChoiceButton
+                caption={captions[0]}
+                right={false}
+                setText={setText}
+              />
             </div>
             <div
               className="column"
             >
-            <SoundButton sound={sounds[1]} image={images[1]} imgStyles={imgStyles} />
+              <ChoiceButton
+                caption={captions[1]}
+                right={false}
+                setText={setText}
+              />
             </div>
             <div
               className="column"
             >
-            <SoundButton sound={sounds[2]} image={images[2]} imgStyles={imgStyles} />
+            <ChoiceButton
+              caption={captions[2]}
+              right={false}
+              setText={setText}
+            />
             </div>
           </div>
 
@@ -44,39 +72,31 @@ const Sound_Card = (props) => {
             <div
               className="column"
             >
-            <SoundButton sound={sounds[3]} image={images[3]} imgStyles={imgStyles} />
+            <ChoiceButton
+              caption={captions[3]}
+              right={false}
+              setText={setText}
+            />
             </div>
             <div
               className="column"
             >
-            <SoundButton sound={sounds[4]} image={images[4]} imgStyles={imgStyles} />
+            <ChoiceButton
+              caption={captions[4]}
+              right={false}
+              setText={setText}
+            />
             </div>
             <div
               className="column"
             >
-            <SoundButton sound={sounds[5]} image={images[5]} imgStyles={imgStyles} />
+            <ChoiceButton
+              caption={captions[5]}
+              right={false}
+              setText={setText}
+            />
             </div>
-          </div>
-
-          <div
-            className="row"
-          >
-            <div
-              className="column"
-            >
-            <SoundButton sound={sounds[6]} image={images[6]} imgStyles={imgStyles} />
             </div>
-            <div
-              className="column"
-            >
-            <SoundButton sound={sounds[7]} image={images[7]} imgStyles={imgStyles} />
-            </div>
-            <div
-              className="column"
-            >
-            <SoundButton sound={sounds[8]} image={images[8]} imgStyles={imgStyles} />
-            </div>
-          </div>
           </div>
       </div>
       {/* <p className="legend">{caption}</p> */}
@@ -84,4 +104,4 @@ const Sound_Card = (props) => {
   );
 };
 
-export default Sound_Card;
+export default Choice_Card;

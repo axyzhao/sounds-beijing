@@ -1,16 +1,40 @@
-{"slides":
-  [{"caption": "Drumming", "title": "test", "author": "Alex", "text": "Tsinghua is full of sounds and sights. Click on an image to hear its sound. Click again to pause."
-   }, {"caption": "Drumming", "title": "test", "author": "Alex", "text": "Tsinghua is full of sounds and sights. Click on an image to hear its sound. Click again to pause."
-    }, {"caption": "Drumming", "title": "test", "author": "Alex", "text": "Tsinghua is full of sounds and sights. Click on an image to hear its sound. Click again to pause."
-     }],
-  "sound_captions":
-  ["Tsinghua construction workers putting up walls around campus. These walls block off the fences to prevent waimai from entering.",
-     "Waterfall on the island in the west part of campus. Many a picnic was had here.",
-     "Sounds of boba emanating from the 七港九. Yucheng most enjoys drinking the 青提葡萄 from this shop.",
-     "The employees at the boba shop shout out “慢走！（manzou!)” or “take care!” when you leave the store",
-     "Arjun Krishnan, when giving his presentation, ran into some technical difficulties.",
-     "At Lover's Hill (情人坡), a singer belts out a tune during the Workers' Day holiday at the start of May.",
-     "Bicycles abound on Tsinghua's campus. Be careful to avoid getting hit!",
-     "HelloBikes are everywhere on campus and scattered through Beijing. The sound of one unlocking is like music to those with weary feet.",
-     "Each of us went through countless COVID tests this year. Here, we hear the sound of temperature checks and testing staff."]
+{
+  "slides": [
+    {
+      "caption": "Drumming",
+      "title": "test",
+      "author": "Alex",
+      "text": "Tsinghua is full of sounds and sights. Click on an image to hear its sound. Click again to pause."
+    },
+    {
+      "caption": "Drumming",
+      "one": {
+        "title": "test",
+        "author": "Alex",
+        "text": "Tsinghua is full of sounds and sights. Click on an image to hear its sound. Click again to pause."
+      },
+      "two": {
+        "title": "test",
+        "author": "Alex",
+        "text": "Tsinghua is full of sounds and sights. Click on an image to hear its sound. Click again to pause."
+      }
+    },
+    {
+      "caption": "Drumming",
+      "title": "test",
+      "author": "Alex",
+      "text": "Tsinghua is full of sounds and sights. Click on an image to hear its sound. Click again to pause."
+    }
+  ],
+  "sound_captions": [
+    "Tsinghua construction workers putting up walls around campus. These walls block off the fences to prevent waimai from entering.",
+    "Waterfall on the island in the west part of campus. Many a picnic was had here.",
+    "Sounds of boba emanating from the 七港九. Yucheng most enjoys drinking the 青提葡萄 from this shop.",
+    "The employees at the boba shop shout out “慢走！（manzou!)” or “take care!” when you leave the store",
+    "Arjun Krishnan, when giving his presentation, ran into some technical difficulties.",
+    "At Lover's Hill (情人坡), a singer belts out a tune during the Workers' Day holiday at the start of May.",
+    "Bicycles abound on Tsinghua's campus. Be careful to avoid getting hit!",
+    "HelloBikes are everywhere on campus and scattered through Beijing. The sound of one unlocking is like music to those with weary feet.",
+    "Each of us went through countless COVID tests this year. Here, we hear the sound of temperature checks and testing staff."
+  ]
 }

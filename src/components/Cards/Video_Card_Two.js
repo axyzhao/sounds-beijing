@@ -7,17 +7,16 @@ import classNames from "classnames";
 const Video_Card_Two = (props) => {
   const { video1, video2, copy, index } = props;
 
-  const caption = copy['caption'];
-  const title = copy['title'];
-  const author = copy['author'];
-  const text = copy['text'];
+  const copy1 = copy["one"];
+  const copy2 = copy["two"];
+  const caption = copy["caption"];
 
   return (
     <div className="card-container">
       <Label caption={caption} />
       <div className="card">
-          <div className="cell">
-          <div className={classNames({"video-container": true, two: true})}>
+      <div className="cell" style={{width: "40%"}}>
+        <div className="video-container" style={{width: "90%"}}>
                     <Player
                       src={video1}
                       autoplay={true}
@@ -25,17 +24,20 @@ const Video_Card_Two = (props) => {
                 </div>
 
               </div>
-            <div className="cell">
+              <div className="cell" style={{width: "40%"}}>
               <div
                 className="explainer"
               >
-                <Title title={title} author={author} />
+                <Title title={copy1["title"]} author={copy1["author"]} />
 
-                <Textbox id={`${index}`} copy={text} type="tall"/>
+                <Textbox id={`${index}`} copy={copy1["text"]} type="tall"/>
+                <Title title={copy2["title"]} author={copy2["author"]} />
+
+                <Textbox id={`${index}`} copy={copy2["text"]} type="tall"/>
               </div>
           </div>
-          <div className="cell">
-          <div className={classNames({"video-container": true, two: true})}>
+          <div className="cell" style={{width: "40%"}}>
+            <div className="video-container" style={{width: "90%"}}>
               <Player
                 src={video2}
                 autoplay={true}

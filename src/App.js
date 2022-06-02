@@ -8,11 +8,17 @@ import Import from './Import';
 import copy from './copy.json';
 
 import drums from './Images/drums.mp4';
+import singing from './Images/old_singing.mp4';
+
 import Video_Card_One from './components/Cards/Video_Card_One';
 import Video_Card_Two from './components/Cards/Video_Card_Two';
+import Video_Card_Three from './components/Cards/Video_Card_Three';
+import Video_Card_Four from './components/Cards/Video_Card_Four';
 
 import Title_Card from './components/Cards/Title_Card';
 import Sound_Card from './components/Cards/Sound_Card';
+import Choice_Card from './components/Cards/Choice_Card';
+
 import LeftArrow from './components/Arrows/LeftArrow';
 import RightArrow from './components/Arrows/RightArrow';
 import Progress from './components/Progress';
@@ -47,24 +53,39 @@ function App(props)
             copy={slides[0]}
             index={0}
           />
-          <Video_Card_One
-            video={drums}
-            copy={slides[1]}
-            index={1}
-          />
+
           <Video_Card_Two
             video1={drums}
             video2={drums}
             copy={slides[1]}
             index={2}
           />
-
+          <Video_Card_Three
+            video1={drums}
+            video2={singing}
+            copy={slides[1]}
+            index={2}
+          />
+          <Video_Card_Four
+            video1={singing}
+            video2={singing}
+            copy={slides[1]}
+            index={2}
+          />
           <Sound_Card
             images={images}
             sounds={sounds}
             captions={captions}
             copy={slides[2]}
             index={3}
+          />
+
+          <Choice_Card
+            images={images}
+            sounds={sounds}
+            captions={captions}
+            copy={slides[2]}
+            index={4}
           />
 
         </Carousel>

@@ -31,18 +31,20 @@ a:hover {
   width: 100%;
   display: flex;
   flex-direction: row;
+
+  &.skinny {
+    width: 100%;
+  }
 }
 
 .video-container {
   margin: 32px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 8px;
 
-  &.one {
-    width: 60%;
-  }
 
-  &.two {
-    width: 90%;
-  }
 }
 
 .explainer {
@@ -130,7 +132,7 @@ button {
   border-radius: 12px;
 
   &.tall {
-    height: 600px;
+    height: 170px;
     width: 100%;
     margin: 0 auto;
   }
@@ -138,13 +140,11 @@ button {
   &.long  {
     height: 100px;
   }
-
 }
 
 .arrow {
   height: 50px;
   background: none;
-
 }
 
 .row {
@@ -213,7 +213,7 @@ h3 {
   &.byline {
     font-size: 18px;
     margin-top: -6px;
-    color: gray;
+    color: #d3d3d3 ;
   }
 
   &.subtitle {
@@ -223,5 +223,5 @@ h3 {
 
 .explainer {
   text-align: center;
-  width: 50%;
+  width: 70%;
 }

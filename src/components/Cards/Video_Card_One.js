@@ -17,7 +17,7 @@ const Video_Card_One = (props) => {
       <Label caption={caption} />
       <div className="card">
           <div className="cell">
-                <div className={classNames({"video-container": true, one: true})}>
+                <div className="video-container" style={{width: "60%"}}>
                     <Player
                       src={video}
                       autoplay={true}
