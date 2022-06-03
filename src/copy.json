@@ -44,5 +44,6 @@
     "Each of us went through countless COVID tests this year. Here, we hear the sound of temperature checks and testing staff."
   ],
 
-  "multiple_choice": ["A", "B", "C", "D", "E", "F"]
+  "multiple_choice": ["Tea ceremony in Beihai", "Public restroom in Gulou",
+    "Stream on Tsinghua after rain", "Baijiu spilling in the pub", "Beverage dispenser in Zijing", "Other"]
 }

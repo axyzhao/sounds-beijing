@@ -43,8 +43,6 @@ a:hover {
   flex-direction: column;
   justify-content: space-between;
   border-radius: 8px;
-
-
 }
 
 .explainer {
@@ -127,17 +125,19 @@ button {
 
   &.choice {
     height: 80px;
-    background-color: #a44cd3;
+    background-color: #ca80e9;
     border-radius: 8px;
     color: white;
     font-size: 16px;
 
     &.isActive {
-      background-color: #8b0000;
+      background-color: #d3d3d3;
       pointer-events: none;
+      text-decoration: line-through;
 
       &.right {
-        background-color: #3a5f3a;
+        background-color: #8800c7;
+        text-decoration: none;
       }
     }
 
@@ -150,7 +150,7 @@ button {
     border-width: 1px;
     border-color: gray;
     box-shadow: 0;
-    background-color: #8800c7;
+    background-color: #b44de0;
   }
 }
 
@@ -254,11 +254,13 @@ h3 {
   }
 }
 
-.explainer {
-  text-align: center;
-  width: 70%;
-}
-
 .choice_button {
   width: 200px;
+}
+
+path {
+    stroke: black;
+    stroke-width: 2px;
+    fill: none;
+
 }
