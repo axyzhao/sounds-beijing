@@ -3,28 +3,34 @@ import classNames from 'classnames/bind';
 
 const ChoiceButton = (props) => {
   const { caption, right, setText } = props;
+  const rightText = "Correct!";
+  const wrongText = "Wrong! Try picking a different option."
   const [status, setStatus] = useState(false);
-  const buttonStyles: CSSProperties = {
-      background: "#d3d3d3",
-      borderRadius: "8px",
-      border: "none",
-      width: "200px",
-      height: "100px",
-    }
-  const handleClick = () => {
-    if (status) {
-      setStatus(false);
-      setText(caption);
 
-    } else {
-      setStatus(true);
-      setText(caption);
+  const handleClick = () => {
+    setStatus(true);
+    if (!status) {
+      if (right) {
+        setText(rightText);
+        const arr = document.getElementsByClassName("choice");
+        for (let i = 0; i < arr.length; i++) {
+          arr[i].classList.add("isActive");
+        }
+      } else {
+        setText(wrongText);
+      }
     }
   }
 
   return (
-  <button onClick={handleClick} style={buttonStyles} className={classNames({"isActive": status})}>
-    {caption}
+  <button onClick={handleClick} className={classNames(
+      {"choice": true,
+        "isActive": status,
+        "right": right,
+      })
+    }
+  >
+    <div className="choice_button">{caption}</div>
   </button>
   );
 };

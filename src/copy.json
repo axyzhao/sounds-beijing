@@ -20,6 +20,12 @@
       }
     },
     {
+      "caption": "Guess that sound",
+      "title": "Can you guess this sound?",
+      "author": "Alex",
+      "text": "Click the image above to play the sound and pick a choice below to guess what made that sound."
+    },
+    {
       "caption": "Drumming",
       "title": "test",
       "author": "Alex",
@@ -36,5 +42,7 @@
     "Bicycles abound on Tsinghua's campus. Be careful to avoid getting hit!",
     "HelloBikes are everywhere on campus and scattered through Beijing. The sound of one unlocking is like music to those with weary feet.",
     "Each of us went through countless COVID tests this year. Here, we hear the sound of temperature checks and testing staff."
-  ]
+  ],
+
+  "multiple_choice": ["A", "B", "C", "D", "E", "F"]
 }

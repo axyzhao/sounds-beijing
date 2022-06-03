@@ -119,6 +119,39 @@ button {
     background-color: #73be73;
     border-radius: 8px;
   }
+
+  &.mystery {
+    height: 210px;
+    margin: 24px;
+  }
+
+  &.choice {
+    height: 80px;
+    background-color: #a44cd3;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+
+    &.isActive {
+      background-color: #8b0000;
+      pointer-events: none;
+
+      &.right {
+        background-color: #3a5f3a;
+      }
+    }
+
+    &.isActive:hover {
+      border: none;
+    }
+  }
+
+  &.choice:hover {
+    border-width: 1px;
+    border-color: gray;
+    box-shadow: 0;
+    background-color: #8800c7;
+  }
 }
 
 .textbox {
@@ -138,7 +171,7 @@ button {
   }
 
   &.long  {
-    height: 100px;
+    height: 64px;
   }
 }
 
@@ -224,4 +257,8 @@ h3 {
 .explainer {
   text-align: center;
   width: 70%;
+}
+
+.choice_button {
+  width: 200px;
 }

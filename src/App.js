@@ -9,11 +9,13 @@ import copy from './copy.json';
 
 import drums from './Images/drums.mp4';
 import singing from './Images/old_singing.mp4';
+import mystery from './Images/mystery.png';
 
 import Video_Card_One from './components/Cards/Video_Card_One';
 import Video_Card_Two from './components/Cards/Video_Card_Two';
 import Video_Card_Three from './components/Cards/Video_Card_Three';
 import Video_Card_Four from './components/Cards/Video_Card_Four';
+import Video_Card_Five from './components/Cards/Video_Card_Five';
 
 import Title_Card from './components/Cards/Title_Card';
 import Sound_Card from './components/Cards/Sound_Card';
@@ -72,6 +74,14 @@ function App(props)
             copy={slides[1]}
             index={2}
           />
+          <Video_Card_Five
+            video1={drums}
+            video2={drums}
+            video3={drums}
+            copy={slides[1]}
+            index={2}
+          />
+
           <Sound_Card
             images={images}
             sounds={sounds}
@@ -81,9 +91,9 @@ function App(props)
           />
 
           <Choice_Card
-            images={images}
-            sounds={sounds}
-            captions={captions}
+            image={mystery}
+            sound={sounds[0]}
+            captions={copy["multiple_choice"]}
             copy={slides[2]}
             index={4}
           />
