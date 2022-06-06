@@ -10,7 +10,9 @@ const Video_Card_Ten = (props) => {
 
   const caption = copy["caption"];
   const setText = (a) => {return null};
-  const imgStyles: CSSProperties = {}
+  const imgStyles: CSSProperties = {
+
+  }
 
   return (
     <div className="card-container">
@@ -29,20 +31,21 @@ const Video_Card_Ten = (props) => {
               </div>
               <div className="cell" style={{width: "60%"}}>
               <div className="video-container" style={{width: "80%", height: "76%"}}>
-              <g>
+                <g>
                 <Title title={copy["title"]} author={copy["author"]} />
                 <Textbox id={`${index}`} copy={copy["text"]} type="tall"/>
                 </g>
-
-                <SoundButton
-                  sound={sound}
-                  image={image}
-                  imgStyles={imgStyles}
-                  caption={caption}
-                  setText={setText}
-                  label={label}
-                  buttonClass="image-small"
-                />
+                <div style={{height: "50%"}}>
+                  <SoundButton
+                    sound={sound}
+                    image={image}
+                    imgStyles={imgStyles}
+                    caption={caption}
+                    setText={setText}
+                    label={label}
+                    buttonClass="image-small"
+                  />
+                </div>
 
             </div>
           </div>

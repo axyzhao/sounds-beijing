@@ -26,86 +26,86 @@ import hello from './Audio/hello.m4a';
 import hello_pic from './Audio/hello.png';
 function Import(props) {
 
-  const one1 = 'https://sounds-beijing.s3.us-west-1.amazonaws.com/Images/bird_1_1.mp4';
-  const one2 = 'https://sounds-beijing.s3.us-west-1.amazonaws.com/Images/bird_1_2.mp4';
+  const one1 = 'https://d3nerocoi848zq.cloudfront.net/Images/bird_1_1.mp4';
+  const one2 = 'https://d3nerocoi848zq.cloudfront.net/Images/bird_1_2.mp4';
 
-  const two1 = 'https://sounds-beijing.s3.us-west-1.amazonaws.com/Images/bird_2_1.jpeg';
-  const two2 = 'https://sounds-beijing.s3.us-west-1.amazonaws.com/Images/bird_2_1.m4a';
-  const two3 = 'https://sounds-beijing.s3.us-west-1.amazonaws.com/Images/bird_2_2.mp4';
+  const two1 = 'https://d3nerocoi848zq.cloudfront.net/Images/bird_2_1.jpeg';
+  const two2 = 'https://d3nerocoi848zq.cloudfront.net/Images/bird_2_1.m4a';
+  const two3 = 'https://d3nerocoi848zq.cloudfront.net/Images/bird_2_2.mp4';
 
-  const three1 = 'https://sounds-beijing.s3.us-west-1.amazonaws.com/Images/robot_3_1.mp4';
-  const three2 = 'https://sounds-beijing.s3.us-west-1.amazonaws.com/Images/robot_3_2.mp4';
+  const three1 = 'https://d3nerocoi848zq.cloudfront.net/Images/robot_3_1.mp4';
+  const three2 = 'https://d3nerocoi848zq.cloudfront.net/Images/robot_3_2.mp4';
 
-  const four1 = 'https://sounds-beijing.s3.us-west-1.amazonaws.com/Images/robot_4_1.mp4';
-  const four2 = 'https://sounds-beijing.s3.us-west-1.amazonaws.com/Images/robot_4_2.m4a';
-  const four3 = 'https://sounds-beijing.s3.us-west-1.amazonaws.com/Images/robot_4_3.m4a';
-  const four4 = 'https://sounds-beijing.s3.us-west-1.amazonaws.com/Images/robot_4_4.png';
+  const four1 = 'https://d3nerocoi848zq.cloudfront.net/Images/robot_4_1.mp4';
+  const four2 = 'https://d3nerocoi848zq.cloudfront.net/Images/robot_4_2.m4a';
+  const four3 = 'https://d3nerocoi848zq.cloudfront.net/Images/robot_4_3.m4a';
+  const four4 = 'https://d3nerocoi848zq.cloudfront.net/Images/robot_4_4.png';
 
-  const five1 = 'https://sounds-beijing.s3.us-west-1.amazonaws.com/Images/music_5_1.mp4';
-  const five2 = 'https://sounds-beijing.s3.us-west-1.amazonaws.com/Images/music_5_2.mp4';
+  const five1 = 'https://d3nerocoi848zq.cloudfront.net/Images/music_5_1.mp4';
+  const five2 = 'https://d3nerocoi848zq.cloudfront.net/Images/music_5_2.mp4';
 
-  const six1 = 'https://sounds-beijing.s3.us-west-1.amazonaws.com/Images/dance_6_1.mp4';
-  const six2 = 'https://sounds-beijing.s3.us-west-1.amazonaws.com/Images/dance_6_2.mp4';
+  const six1 = 'https://d3nerocoi848zq.cloudfront.net/Images/dance_6_1.mp4';
+  const six2 = 'https://d3nerocoi848zq.cloudfront.net/Images/dance_6_2.mp4';
 
-  const seven1 = 'https://sounds-beijing.s3.us-west-1.amazonaws.com/Images/public_7_1.mp4';
-  const seven2 = 'https://sounds-beijing.s3.us-west-1.amazonaws.com/Images/public_7_2.mp4';
-  const seven3 = 'https://sounds-beijing.s3.us-west-1.amazonaws.com/Images/public_7_3.mp4';
+  const seven1 = 'https://d3nerocoi848zq.cloudfront.net/Images/public_7_1.mp4';
+  const seven2 = 'https://d3nerocoi848zq.cloudfront.net/Images/public_7_2.mp4';
+  const seven3 = 'https://d3nerocoi848zq.cloudfront.net/Images/public_7_3.mp4';
 
-  const eight1 = 'https://sounds-beijing.s3.us-west-1.amazonaws.com/Images/park_8_1.mp4';
-  const eight2 = 'https://sounds-beijing.s3.us-west-1.amazonaws.com/Images/park_8_2.mp4';
-  const eight3 = 'https://sounds-beijing.s3.us-west-1.amazonaws.com/Images/park_8_3.mp4';
+  const eight1 = 'https://d3nerocoi848zq.cloudfront.net/Images/park_8_1.mp4';
+  const eight2 = 'https://d3nerocoi848zq.cloudfront.net/Images/park_8_2.mp4';
+  const eight3 = 'https://d3nerocoi848zq.cloudfront.net/Images/park_8_3.mp4';
 
-  const nine1 = 'https://sounds-beijing.s3.us-west-1.amazonaws.com/Images/test_9_1.mp4';
-  const nine2 = 'https://sounds-beijing.s3.us-west-1.amazonaws.com/Images/test_9_2.mp4';
+  const nine1 = 'https://d3nerocoi848zq.cloudfront.net/Images/test_9_1.mp4';
+  const nine2 = 'https://d3nerocoi848zq.cloudfront.net/Images/test_9_2.mp4';
 
-  const ten1 = 'https://sounds-beijing.s3.us-west-1.amazonaws.com/Images/city_10_1.mp4';
-  const ten2 = 'https://sounds-beijing.s3.us-west-1.amazonaws.com/Images/city_10_2.mp4';
-  const ten3 = 'https://sounds-beijing.s3.us-west-1.amazonaws.com/Images/city_10_3.mp4';
+  const ten1 = 'https://d3nerocoi848zq.cloudfront.net/Images/city_10_1.mp4';
+  const ten2 = 'https://d3nerocoi848zq.cloudfront.net/Images/city_10_2.mp4';
+  const ten3 = 'https://d3nerocoi848zq.cloudfront.net/Images/city_10_3.mp4';
 
-  const eleven1 = 'https://sounds-beijing.s3.us-west-1.amazonaws.com/Images/bar_11_1.mp4';
-  const eleven2 = 'https://sounds-beijing.s3.us-west-1.amazonaws.com/Images/bar_11_2.mp4';
+  const eleven1 = 'https://d3nerocoi848zq.cloudfront.net/Images/bar_11_1.mp4';
+  const eleven2 = 'https://d3nerocoi848zq.cloudfront.net/Images/bar_11_2.mp4';
 
-  const twelve1 = 'https://sounds-beijing.s3.us-west-1.amazonaws.com/Images/night_12_1.mp4';
-  const twelve2 = 'https://sounds-beijing.s3.us-west-1.amazonaws.com/Images/night_12_2.mp4';
+  const twelve1 = 'https://d3nerocoi848zq.cloudfront.net/Images/night_12_1.mp4';
+  const twelve2 = 'https://d3nerocoi848zq.cloudfront.net/Images/night_12_2.mp4';
 
-  const thirt1 = 'https://sounds-beijing.s3.us-west-1.amazonaws.com/Images/songs_13_1.mp4';
-  const thirt2 = 'https://sounds-beijing.s3.us-west-1.amazonaws.com/Images/songs_13_2.mp4';
+  const thirt1 = 'https://d3nerocoi848zq.cloudfront.net/Images/songs_13_1.mp4';
+  const thirt2 = 'https://d3nerocoi848zq.cloudfront.net/Images/songs_13_2.mp4';
 
-  const fourt1 = 'https://sounds-beijing.s3.us-west-1.amazonaws.com/Images/concert_14_1.mp4';
-  const fourt2 = 'https://sounds-beijing.s3.us-west-1.amazonaws.com/Images/concert_14_2.mp4';
-  const fourt3 = 'https://sounds-beijing.s3.us-west-1.amazonaws.com/Images/concert_14_3.mp4';
+  const fourt1 = 'https://d3nerocoi848zq.cloudfront.net/Images/concert_14_1.mp4';
+  const fourt2 = 'https://d3nerocoi848zq.cloudfront.net/Images/concert_14_2.mp4';
+  const fourt3 = 'https://d3nerocoi848zq.cloudfront.net/Images/concert_14_3.mp4';
 
-  const fift1 = 'https://sounds-beijing.s3.us-west-1.amazonaws.com/Images/songs_15_1.mp4';
-  const fift2 = 'https://sounds-beijing.s3.us-west-1.amazonaws.com/Images/songs_15_2.mp4';
+  const fift1 = 'https://d3nerocoi848zq.cloudfront.net/Images/songs_15_1.mp4';
+  const fift2 = 'https://d3nerocoi848zq.cloudfront.net/Images/songs_15_2.mp4';
 
-  const sixt1 = 'https://sounds-beijing.s3.us-west-1.amazonaws.com/Images/concert_16_1.mp4';
-  const sixt2 = 'https://sounds-beijing.s3.us-west-1.amazonaws.com/Images/concert_16_2.mp4';
+  const sixt1 = 'https://d3nerocoi848zq.cloudfront.net/Images/concert_16_1.mp4';
+  const sixt2 = 'https://d3nerocoi848zq.cloudfront.net/Images/concert_16_2.mp4';
 
-  const sevent1 = 'https://sounds-beijing.s3.us-west-1.amazonaws.com/Images/food_17_1.mp4';
-  const sevent2 = 'https://sounds-beijing.s3.us-west-1.amazonaws.com/Images/food_17_2.mp4';
-  const sevent3 = 'https://sounds-beijing.s3.us-west-1.amazonaws.com/Images/food_17_3.mp4';
+  const sevent1 = 'https://d3nerocoi848zq.cloudfront.net/Images/food_17_1.mp4';
+  const sevent2 = 'https://d3nerocoi848zq.cloudfront.net/Images/food_17_2.mp4';
+  const sevent3 = 'https://d3nerocoi848zq.cloudfront.net/Images/food_17_3.mp4';
 
-  const eighteen1 = 'https://sounds-beijing.s3.us-west-1.amazonaws.com/Images/sports_18_1.mp4';
-  const eighteen2 = 'https://sounds-beijing.s3.us-west-1.amazonaws.com/Images/sports_18_2.mp4';
+  const eighteen1 = 'https://d3nerocoi848zq.cloudfront.net/Images/sports_18_1.mp4';
+  const eighteen2 = 'https://d3nerocoi848zq.cloudfront.net/Images/sports_18_2.mp4';
 
-  const ninet1 = 'https://sounds-beijing.s3.us-west-1.amazonaws.com/Images/sports_19_1.mp4';
-  const ninet2 = 'https://sounds-beijing.s3.us-west-1.amazonaws.com/Images/sports_19_2.mp4';
+  const ninet1 = 'https://d3nerocoi848zq.cloudfront.net/Images/sports_19_1.mp4';
+  const ninet2 = 'https://d3nerocoi848zq.cloudfront.net/Images/sports_19_2.mp4';
 
-  const twenty1 = 'https://sounds-beijing.s3.us-west-1.amazonaws.com/Images/lockdown_20_1.png';
-  const twenty2 = 'https://sounds-beijing.s3.us-west-1.amazonaws.com/Images/lockdown_20_1.m4a';
-  const twenty3 = 'https://sounds-beijing.s3.us-west-1.amazonaws.com/Images/lockdown_20_2.mp4';
-  const twenty4 = 'https://sounds-beijing.s3.us-west-1.amazonaws.com/Images/lockdown_20_3.mp4';
+  const twenty1 = 'https://d3nerocoi848zq.cloudfront.net/Images/lockdown_20_1.png';
+  const twenty2 = 'https://d3nerocoi848zq.cloudfront.net/Images/lockdown_20_1.m4a';
+  const twenty3 = 'https://d3nerocoi848zq.cloudfront.net/Images/lockdown_20_2.mp4';
+  const twenty4 = 'https://d3nerocoi848zq.cloudfront.net/Images/lockdown_20_3.mp4';
 
-  const twento1 = 'https://sounds-beijing.s3.us-west-1.amazonaws.com/Images/farewell_21_1.mp4';
-  const twento2 = 'https://sounds-beijing.s3.us-west-1.amazonaws.com/Images/farewell_21_2.mp4';
+  const twento1 = 'https://d3nerocoi848zq.cloudfront.net/Images/farewell_21_1.mp4';
+  const twento2 = 'https://d3nerocoi848zq.cloudfront.net/Images/farewell_21_2.mp4';
 
-  const twentyt1 = 'https://sounds-beijing.s3.us-west-1.amazonaws.com/Images/nature_22_1.mp4';
-  const twentyt2 = 'https://sounds-beijing.s3.us-west-1.amazonaws.com/Images/nature_22_2.mp4';
-  const twentyt3 = 'https://sounds-beijing.s3.us-west-1.amazonaws.com/Images/nature_22_3.mp4';
+  const twentyt1 = 'https://d3nerocoi848zq.cloudfront.net/Images/nature_22_1.mp4';
+  const twentyt2 = 'https://d3nerocoi848zq.cloudfront.net/Images/nature_22_2.mp4';
+  const twentyt3 = 'https://d3nerocoi848zq.cloudfront.net/Images/nature_22_3.mp4';
 
 
-  const guess_audio = 'https://sounds-beijing.s3.us-west-1.amazonaws.com/Images/guess.m4a';
-  const guess_img = 'https://sounds-beijing.s3.us-west-1.amazonaws.com/Images/guess.png';
+  const guess_audio = 'https://d3nerocoi848zq.cloudfront.net/Images/guess.m4a';
+  const guess_img = 'https://d3nerocoi848zq.cloudfront.net/Images/guess.png';
 
   const Images = [jail_pic, waterfall_pic, boba_pic,
     manzou_pic, thesis_pic, singer_pic, bike_pic, hello_pic, temp_pic];
