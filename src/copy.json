@@ -1,49 +1,460 @@
 {
-  "slides": [
-    {
-      "caption": "Drumming",
-      "title": "test",
-      "author": "Alex",
-      "text": "Tsinghua is full of sounds and sights. Click on an image to hear its sound. Click again to pause."
-    },
-    {
-      "caption": "Drumming",
-      "one": {
-        "title": "test",
-        "author": "Alex",
-        "text": "Tsinghua is full of sounds and sights. Click on an image to hear its sound. Click again to pause."
-      },
-      "two": {
-        "title": "test",
-        "author": "Alex",
-        "text": "Tsinghua is full of sounds and sights. Click on an image to hear its sound. Click again to pause."
-      }
-    },
-    {
-      "caption": "Guess that sound",
-      "title": "Can you guess this sound?",
-      "author": "Alex",
-      "text": "Click the image above to play the sound and pick a choice below to guess what made that sound."
-    },
-    {
-      "caption": "Drumming",
-      "title": "test",
-      "author": "Alex",
-      "text": "Tsinghua is full of sounds and sights. Click on an image to hear its sound. Click again to pause."
-    }
-  ],
-  "sound_captions": [
-    "Tsinghua construction workers putting up walls around campus. These walls block off the fences to prevent waimai from entering.",
-    "Waterfall on the island in the west part of campus. Many a picnic was had here.",
-    "Sounds of boba emanating from the 七港九. Yucheng most enjoys drinking the 青提葡萄 from this shop.",
-    "The employees at the boba shop shout out “慢走！（manzou!)” or “take care!” when you leave the store",
-    "Arjun Krishnan, when giving his presentation, ran into some technical difficulties.",
-    "At Lover's Hill (情人坡), a singer belts out a tune during the Workers' Day holiday at the start of May.",
-    "Bicycles abound on Tsinghua's campus. Be careful to avoid getting hit!",
-    "HelloBikes are everywhere on campus and scattered through Beijing. The sound of one unlocking is like music to those with weary feet.",
-    "Each of us went through countless COVID tests this year. Here, we hear the sound of temperature checks and testing staff."
-  ],
-
-  "multiple_choice": ["Tea ceremony in Beihai", "Public restroom in Gulou",
-    "Stream on Tsinghua after rain", "Baijiu spilling in the pub", "Beverage dispenser in Zijing", "Other"]
+   "english":{
+     "title": {"big": "Sounds of Beijing", "byline1": "By Alex Zhao and Yucheng Tang",
+       "byline2": "策划与设计 ｜ 汤禹成 赵星宇", "subtitle": "We spent a year in Beijing, immersed in sounds and sights both strange and familiar.",
+       "instruction": "Click the arrows or hit your keyboard arrows to navigate the exhibit."
+     },
+      "slides":[
+         {
+            "caption":"Nature",
+            "title":"Bird Song",
+            "author":"Christina Lai, Michelle Fang",
+            "text":"Beijing is home to many bird species. On the left, we see birds chirping in a hutong. Below, we hear the bird song in front of Schwarzman College."
+         },
+         {
+            "caption":"Nature",
+            "title":"Bird Song",
+            "author":"Arjun Sai, Christina Lai",
+            "text":"Click the image on the left to hear the sounds of the Chinese blackbird, recorded in Tsinghua University. Below are birds chirping in Houhai."
+         },
+         {
+            "caption":"Robots",
+            "title":"Robots Among Us",
+            "author":"Gurchit Chatha, Pearl Kexuan Xu",
+            "text":"Robots live among us in Beijing. On the left is the delivery robot in a hotel. Below is the robot making noodles."
+         },
+         {
+            "caption":"Singing",
+            "title":"test",
+            "author":"Alex Li",
+            "text":"Tsinghua is full of sounds and sights. Click on an image to hear its sound. Click again to pause."
+         },
+         {
+            "caption":"Music",
+            "one":{
+               "title":"Flute",
+               "author":"Alex",
+               "text":"The sound of a plaintive flute wafts through the air."
+            },
+            "two":{
+               "title":"Conducting the Air",
+               "author":"Gurchit Chatha",
+               "text":"We stumbled across this man conducting the air by the lake."
+            }
+         },
+         {
+            "caption":"Dance",
+            "one":{
+               "title":"Plaza Dancing",
+               "author":"Gurchit Chatha",
+               "text":"Thriving public life manifests in plaza dancing."
+            },
+            "two":{
+               "title":"Olympic Volunteers Dancing",
+               "author":"Lujain Ibrahim",
+               "text":"This group of volunteers for the Beijing Winter Olympics."
+            }
+         },
+         {
+            "caption":"Park life",
+            "title":"Park life",
+            "author":"Alex Li, ",
+            "text":"Park life is real."
+         },
+         {
+            "caption":"Park life",
+            "title":"Park life",
+            "author":"Alex Li, ",
+            "text":"Park life is real."
+         },
+         {
+            "caption":"Dance",
+            "one":{
+               "title":"Plaza Dancing",
+               "author":"Gurchit Chatha",
+               "text":"Thriving public life manifests in plaza dancing."
+            },
+            "two":{
+               "title":"Olympic Volunteers Dancing",
+               "author":"Lujain Ibrahim",
+               "text":"This group of volunteers for the Beijing Winter Olympics."
+            }
+         },
+         {
+            "caption":"Park life",
+            "title":"Park life",
+            "author":"Alex Li, ",
+            "text":"Park life is real."
+         },
+         {
+            "caption":"Night life",
+            "one":{
+               "title":"Sanlitun Bar",
+               "author":"Zhou Yu",
+               "text":"Thriving public life manifests in plaza dancing."
+            },
+            "two":{
+               "title":"Destination",
+               "author":"Raven Witherspoon",
+               "text":"This group of volunteers for the Beijing Winter Olympics."
+            }
+         },
+         {
+            "caption":"Night life",
+            "one":{
+               "title":"Nighttime Busker",
+               "author":"Raven Witherspoon",
+               "text":"Thriving public life manifests in plaza dancing."
+            },
+            "two":{
+               "title":"KTV",
+               "author":"Karuna Nandkumar",
+               "text":"This group of volunteers for the Beijing Winter Olympics."
+            }
+         },
+         {
+            "caption":"Tale of Two Songs",
+            "one":{
+               "title":"Rapper",
+               "author":"Trevaughn Latimer",
+               "text":"Thriving public life manifests in plaza dancing."
+            },
+            "two":{
+               "title":"Christmas",
+               "author":"Zhou Yu",
+               "text":"This group of volunteers for the Beijing Winter Olympics."
+            }
+         },
+         {
+            "caption":"Concerts",
+            "title":"Concerts",
+            "author":"xx, Lujain Ibrahim, Christina Lai",
+            "text":"Park life is real."
+         },
+         {
+            "caption":"Concerts",
+            "title":"Concerts",
+            "author":"xx, Lujain Ibrahim, Christina Lai",
+            "text":"Park life is real."
+         },
+         {
+            "caption":"Tale of Two Songs",
+            "one":{
+               "title":"Rapper",
+               "author":"Trevaughn Latimer",
+               "text":"Thriving public life manifests in plaza dancing."
+            },
+            "two":{
+               "title":"Christmas",
+               "author":"Zhou Yu",
+               "text":"This group of volunteers for the Beijing Winter Olympics."
+            }
+         },
+         {
+            "caption":"Food",
+            "title":"Food",
+            "author":"xx, Trevaughn Latimer, Christina Lai",
+            "text":"Park life is real."
+         },
+         {
+            "caption":"Sports",
+            "title":"Sports at Tsinghua",
+            "author":"xx, Trevaughn Latimer, Christina Lai",
+            "text":"Park life is real."
+         },
+         {
+            "caption":"Sports",
+            "one":{
+               "title":"Soccer Huddle",
+               "author":"Trevaughn Latimer",
+               "text":"Thriving public life manifests in plaza dancing."
+            },
+            "two":{
+               "title":"Soccer Goal",
+               "author":"Zhou Yu",
+               "text":"This group of volunteers for the Beijing Winter Olympics."
+            }
+         },
+         {
+            "caption":"Sports",
+            "title":"Sports at Tsinghua",
+            "author":"xx, Trevaughn Latimer, Christina Lai",
+            "text":"Park life is real."
+         },
+         {
+            "caption":"Tale of Two Songs",
+            "one":{
+               "title":"Rapper",
+               "author":"Trevaughn Latimer",
+               "text":"Thriving public life manifests in plaza dancing."
+            },
+            "two":{
+               "title":"Christmas",
+               "author":"Zhou Yu",
+               "text":"This group of volunteers for the Beijing Winter Olympics."
+            }
+         },
+         {
+            "caption":"Nature",
+            "title":"Exploring Nature Outside the City",
+            "author":"Serge-Raymond Nzabadora",
+            "text":"Gubeikou and the Great Wall."
+         },
+         {
+            "caption":"Guess the sound",
+            "title":"Can you guess this sound?",
+            "author":"Lujain Ibrahim",
+            "text":"How well do you really know Beijing? Click the image to play the sound and choose what you think made the sound."
+         }
+      ],
+      "sound_captions":[
+         "Tsinghua construction workers putting up walls around campus. These walls block off the fences to prevent waimai from entering.",
+         "Waterfall on the island in the west part of campus. Many a picnic was had here.",
+         "Sounds of boba emanating from the 七港九. Yucheng most enjoys drinking the 青提葡萄 from this shop.",
+         "The employees at the boba shop shout out “慢走！（manzou!)” or “take care!” when you leave the store",
+         "Arjun Krishnan, when giving his presentation, ran into some technical difficulties.",
+         "At Lover's Hill (情人坡), a singer belts out a tune during the Workers' Day holiday at the start of May.",
+         "Bicycles abound on Tsinghua's campus. Be careful to avoid getting hit!",
+         "HelloBikes are everywhere on campus and scattered through Beijing. The sound of one unlocking is like music to those with weary feet.",
+         "Each of us went through countless COVID tests this year. Here, we hear the sound of temperature checks and testing staff."
+      ],
+      "sound_labels": ["Tsinghua walls", "Waterfall", "Boba", "Manzou!", "Capstone issues", "Singer on Lover's Hill", "Bikes", "HelloBikes", "COVID Testing"],
+      "multiple_choice":[
+         "Tea ceremony in Beihai",
+         "Public restroom in Gulou",
+         "Stream on Tsinghua after rain",
+         "Baijiu spilling in the pub",
+         "Beverage dispenser in Zijing",
+         "Other"
+      ]
+   },
+   "chinese": {
+     "title": {"big": "北京之声", "byline1": "策划与设计 ｜ 汤禹成 赵星宇",
+       "byline2": "By Alex Zhao and Yucheng Tang", "subtitle": "我们在北京花了一年, 沉浸在又陌生又熟悉的声音和场景。",
+       "instruction": "点箭头或者按键盘箭头浏览展览。"
+     },
+      "slides":[
+         {
+            "caption":"大自然",
+            "title":"Bird Song",
+            "author":"Christina Lai, Michelle Fang",
+            "text":"Beijing is home to many bird species. On the left, we see birds chirping in a hutong. Below, we hear the bird song in front of Schwarzman College."
+         },
+         {
+            "caption":"Nature",
+            "title":"Bird Song",
+            "author":"Arjun Sai, Christina Lai",
+            "text":"Click the image on the left to hear the sounds of the Chinese blackbird, recorded in Tsinghua University. Below are birds chirping in Houhai."
+         },
+         {
+            "caption":"Robots",
+            "title":"Robots Among Us",
+            "author":"Gurchit Chatha, Pearl Kexuan Xu",
+            "text":"Robots live among us in Beijing. On the left is the delivery robot in a hotel. Below is the robot making noodles."
+         },
+         {
+            "caption":"Singing",
+            "title":"test",
+            "author":"Alex Li",
+            "text":"Tsinghua is full of sounds and sights. Click on an image to hear its sound. Click again to pause."
+         },
+         {
+            "caption":"Music",
+            "one":{
+               "title":"Flute",
+               "author":"Alex",
+               "text":"The sound of a plaintive flute wafts through the air."
+            },
+            "two":{
+               "title":"Conducting the Air",
+               "author":"Gurchit Chatha",
+               "text":"We stumbled across this man conducting the air by the lake."
+            }
+         },
+         {
+            "caption":"Dance",
+            "one":{
+               "title":"Plaza Dancing",
+               "author":"Gurchit Chatha",
+               "text":"Thriving public life manifests in plaza dancing."
+            },
+            "two":{
+               "title":"Olympic Volunteers Dancing",
+               "author":"Lujain Ibrahim",
+               "text":"This group of volunteers for the Beijing Winter Olympics."
+            }
+         },
+         {
+            "caption":"Park life",
+            "title":"Park life",
+            "author":"Alex Li, ",
+            "text":"Park life is real."
+         },
+         {
+            "caption":"Park life",
+            "title":"Park life",
+            "author":"Alex Li, ",
+            "text":"Park life is real."
+         },
+         {
+            "caption":"Dance",
+            "one":{
+               "title":"Plaza Dancing",
+               "author":"Gurchit Chatha",
+               "text":"Thriving public life manifests in plaza dancing."
+            },
+            "two":{
+               "title":"Olympic Volunteers Dancing",
+               "author":"Lujain Ibrahim",
+               "text":"This group of volunteers for the Beijing Winter Olympics."
+            }
+         },
+         {
+            "caption":"Park life",
+            "title":"Park life",
+            "author":"Alex Li, ",
+            "text":"Park life is real."
+         },
+         {
+            "caption":"Night life",
+            "one":{
+               "title":"Sanlitun Bar",
+               "author":"Zhou Yu",
+               "text":"Thriving public life manifests in plaza dancing."
+            },
+            "two":{
+               "title":"Destination",
+               "author":"Raven Witherspoon",
+               "text":"This group of volunteers for the Beijing Winter Olympics."
+            }
+         },
+         {
+            "caption":"Night life",
+            "one":{
+               "title":"Nighttime Busker",
+               "author":"Raven Witherspoon",
+               "text":"Thriving public life manifests in plaza dancing."
+            },
+            "two":{
+               "title":"KTV",
+               "author":"Karuna Nandkumar",
+               "text":"This group of volunteers for the Beijing Winter Olympics."
+            }
+         },
+         {
+            "caption":"Tale of Two Songs",
+            "one":{
+               "title":"Rapper",
+               "author":"Trevaughn Latimer",
+               "text":"Thriving public life manifests in plaza dancing."
+            },
+            "two":{
+               "title":"Christmas",
+               "author":"Zhou Yu",
+               "text":"This group of volunteers for the Beijing Winter Olympics."
+            }
+         },
+         {
+            "caption":"Concerts",
+            "title":"Concerts",
+            "author":"xx, Lujain Ibrahim, Christina Lai",
+            "text":"Park life is real."
+         },
+         {
+            "caption":"Concerts",
+            "title":"Concerts",
+            "author":"xx, Lujain Ibrahim, Christina Lai",
+            "text":"Park life is real."
+         },
+         {
+            "caption":"Tale of Two Songs",
+            "one":{
+               "title":"Rapper",
+               "author":"Trevaughn Latimer",
+               "text":"Thriving public life manifests in plaza dancing."
+            },
+            "two":{
+               "title":"Christmas",
+               "author":"Zhou Yu",
+               "text":"This group of volunteers for the Beijing Winter Olympics."
+            }
+         },
+         {
+            "caption":"Food",
+            "title":"Food",
+            "author":"xx, Trevaughn Latimer, Christina Lai",
+            "text":"Park life is real."
+         },
+         {
+            "caption":"Sports",
+            "title":"Sports at Tsinghua",
+            "author":"xx, Trevaughn Latimer, Christina Lai",
+            "text":"Park life is real."
+         },
+         {
+            "caption":"Sports",
+            "one":{
+               "title":"Soccer Huddle",
+               "author":"Trevaughn Latimer",
+               "text":"Thriving public life manifests in plaza dancing."
+            },
+            "two":{
+               "title":"Soccer Goal",
+               "author":"Zhou Yu",
+               "text":"This group of volunteers for the Beijing Winter Olympics."
+            }
+         },
+         {
+            "caption":"Sports",
+            "title":"Sports at Tsinghua",
+            "author":"xx, Trevaughn Latimer, Christina Lai",
+            "text":"Park life is real."
+         },
+         {
+            "caption":"Tale of Two Songs",
+            "one":{
+               "title":"Rapper",
+               "author":"Trevaughn Latimer",
+               "text":"Thriving public life manifests in plaza dancing."
+            },
+            "two":{
+               "title":"Christmas",
+               "author":"Zhou Yu",
+               "text":"This group of volunteers for the Beijing Winter Olympics."
+            }
+         },
+         {
+            "caption":"Nature",
+            "title":"Exploring Nature Outside the City",
+            "author":"Serge-Raymond Nzabadora",
+            "text":"Gubeikou and the Great Wall."
+         },
+         {
+            "caption":"Guess the sound",
+            "title":"Can you guess this sound?",
+            "author":"Lujain Ibrahim",
+            "text":"How well do you really know Beijing? Click the image to play the sound and choose what you think made the sound."
+         }
+      ],
+      "sound_captions":[
+         "Tsinghua construction workers putting up walls around campus. These walls block off the fences to prevent waimai from entering.",
+         "Waterfall on the island in the west part of campus. Many a picnic was had here.",
+         "Sounds of boba emanating from the 七港九. Yucheng most enjoys drinking the 青提葡萄 from this shop.",
+         "The employees at the boba shop shout out “慢走！（manzou!)” or “take care!” when you leave the store",
+         "Arjun Krishnan, when giving his presentation, ran into some technical difficulties.",
+         "At Lover's Hill (情人坡), a singer belts out a tune during the Workers' Day holiday at the start of May.",
+         "Bicycles abound on Tsinghua's campus. Be careful to avoid getting hit!",
+         "HelloBikes are everywhere on campus and scattered through Beijing. The sound of one unlocking is like music to those with weary feet.",
+         "Each of us went through countless COVID tests this year. Here, we hear the sound of temperature checks and testing staff."
+      ],
+      "sound_labels": ["Tsinghua walls", "Waterfall", "Boba", "Manzou!", "Capstone issues", "Singer on Lover's Hill", "Bikes", "HelloBikes", "COVID Testing"],
+      "multiple_choice":[
+         "Tea ceremony in Beihai",
+         "Public restroom in Gulou",
+         "Stream on Tsinghua after rain",
+         "Baijiu spilling in the pub",
+         "Beverage dispenser in Zijing",
+         "Other"
+      ]
+   }
 }

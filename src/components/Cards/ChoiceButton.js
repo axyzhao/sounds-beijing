@@ -2,7 +2,7 @@ import { useState } from 'react';
 import classNames from 'classnames/bind';
 
 const ChoiceButton = (props) => {
-  const { caption, right, setText } = props;
+  const { caption, right, setText, image, setImage } = props;
   const rightText = "Correct!";
   const wrongText = "Wrong! Try picking a different option."
   const [status, setStatus] = useState(false);
@@ -12,6 +12,7 @@ const ChoiceButton = (props) => {
     if (!status) {
       if (right) {
         setText(rightText);
+        setImage(image);
         const arr = document.getElementsByClassName("choice");
         for (let i = 0; i < arr.length; i++) {
           arr[i].classList.add("isActive");

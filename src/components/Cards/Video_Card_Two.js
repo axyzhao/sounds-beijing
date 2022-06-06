@@ -5,7 +5,7 @@ import Label from './Text/Label';
 import classNames from "classnames";
 
 const Video_Card_Two = (props) => {
-  const { video1, video2, copy, index } = props;
+  const { video1, video2, copy, index, toc } = props;
 
   const copy1 = copy["one"];
   const copy2 = copy["two"];
@@ -13,7 +13,7 @@ const Video_Card_Two = (props) => {
 
   return (
     <div className="card-container">
-      <Label caption={caption} />
+    <Label caption={caption} toc={toc} />
       <div className="card">
       <div className="cell" style={{width: "40%"}}>
         <div className="video-container" style={{width: "90%"}}>
@@ -26,17 +26,15 @@ const Video_Card_Two = (props) => {
               </div>
               <div className="cell" style={{width: "40%"}}>
               <div className="video-container" style={{width: "100%"}}>
-                <AnnotatedBox xPos={10}
-                              arrowWidth={5}
-                              yPos={50}
-                              arrowHeight={7}
+                <AnnotatedBox xPos={70}
+                              yPos={40}
+                              triHeight={30}
                               copy={copy1}
                               left={true}
                               />
-                <AnnotatedBox xPos={90}
-                              arrowWidth={5}
-                              yPos={50}
-                              arrowHeight={7}
+                <AnnotatedBox xPos={30}
+                              triHeight={30}
+                              yPos={80}
                               copy={copy2}
                               />
               </div>

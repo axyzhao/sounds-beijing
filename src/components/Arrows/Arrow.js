@@ -1,5 +1,4 @@
 import left from './arrow.svg';
-// import right from './Images/right.svg';
 
 const Arrow = (props) => {
   const { back, label, onClickHandler } = props;

@@ -2,14 +2,14 @@ import SoundButton from './SoundButton.js';
 import Label from './Text/Label';
 import Title from './Text/Title';
 import Textbox from './Text/Textbox';
-import {useState} from 'react';
+import { useState } from 'react';
 
 const Sound_Card = (props) => {
 
-  const { images, sounds, captions, copy, index } = props;
+  const { images, sounds, captions, labels, copy, index, toc } = props;
   const imgStyles: CSSProperties = {
-    height: "160px",
-    width: "160px",
+    height: "200px",
+    width: "200px",
     margin: "0 auto",
   }
 
@@ -21,7 +21,7 @@ const Sound_Card = (props) => {
 
   return (
     <div className="card-container">
-      <Label className={caption} caption={caption} />
+      <Label className={caption} caption={caption} toc={toc} />
       <Title title={title} author={author} />
       <Textbox copy={text} type="long" />
       <div className="card" style={{"textAlign": "center"}}>
@@ -35,6 +35,7 @@ const Sound_Card = (props) => {
               <SoundButton
                 sound={sounds[0]}
                 image={images[0]}
+                label={labels[0]}
                 imgStyles={imgStyles}
                 caption={captions[0]}
                 setText={setText}
@@ -46,6 +47,8 @@ const Sound_Card = (props) => {
               <SoundButton
                 sound={sounds[1]}
                 image={images[1]}
+                label={labels[1]}
+
                 imgStyles={imgStyles}
                 caption={captions[1]}
                 setText={setText}
@@ -57,6 +60,8 @@ const Sound_Card = (props) => {
               <SoundButton
                 sound={sounds[2]}
                 image={images[2]}
+                label={labels[2]}
+
                 imgStyles={imgStyles}
                 caption={captions[2]}
                 setText={setText}
@@ -73,6 +78,8 @@ const Sound_Card = (props) => {
               <SoundButton
                 sound={sounds[3]}
                 image={images[3]}
+                label={labels[3]}
+
                 imgStyles={imgStyles}
                 caption={captions[3]}
                 setText={setText}
@@ -84,6 +91,8 @@ const Sound_Card = (props) => {
               <SoundButton
                 sound={sounds[4]}
                 image={images[4]}
+                label={labels[4]}
+
                 imgStyles={imgStyles}
                 caption={captions[4]}
                 setText={setText}
@@ -95,6 +104,8 @@ const Sound_Card = (props) => {
               <SoundButton
                 sound={sounds[5]}
                 image={images[5]}
+                label={labels[5]}
+
                 imgStyles={imgStyles}
                 caption={captions[5]}
                 setText={setText}
@@ -102,46 +113,8 @@ const Sound_Card = (props) => {
             </div>
           </div>
 
-          <div
-            className="row"
-          >
-            <div
-              className="column"
-            >
-              <SoundButton
-                sound={sounds[6]}
-                image={images[6]}
-                imgStyles={imgStyles}
-                caption={captions[6]}
-                setText={setText}
-              />
-            </div>
-            <div
-              className="column"
-            >
-              <SoundButton
-                sound={sounds[7]}
-                image={images[7]}
-                imgStyles={imgStyles}
-                caption={captions[7]}
-                setText={setText}
-              />
-            </div>
-            <div
-              className="column"
-            >
-              <SoundButton
-                sound={sounds[8]}
-                image={images[8]}
-                imgStyles={imgStyles}
-                caption={captions[8]}
-                setText={setText}
-              />
-            </div>
-          </div>
           </div>
       </div>
-      {/* <p className="legend">{caption}</p> */}
     </div>
   );
 };

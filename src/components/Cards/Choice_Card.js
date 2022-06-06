@@ -1,17 +1,19 @@
-import ChoiceButton from './ChoiceButton.js';
+import {useState} from 'react';
+import useSound from 'use-sound';
+
+import ChoiceButton from './ChoiceButton';
 import Label from './Text/Label';
 import Title from './Text/Title';
 import Textbox from './Text/Textbox';
-import {useState} from 'react';
-import useSound from 'use-sound';
 import SoundButton_Choice from './SoundButton_Choice';
 
 const Choice_Card = (props) => {
 
-  const { sound, image, captions, copy, index } = props;
+  const { sound, mystery, hiddenImage, captions, copy, index, toc } = props;
 
   const [play, { stop }] = useSound(sound, {interrupt: true,});
   const [text, setText] = useState(copy['text']);
+  const [image, setImage] = useState(mystery);
 
   const caption = copy['caption'];
   const title = copy['title'];
@@ -19,7 +21,7 @@ const Choice_Card = (props) => {
 
   return (
     <div className="card-container">
-      <Label className={caption} caption={caption} />
+      <Label className={caption} caption={caption} toc={toc} />
       <Title title={title} author={author} />
       <SoundButton_Choice sound={sound} image={image} />
 
@@ -37,6 +39,8 @@ const Choice_Card = (props) => {
                 caption={captions[0]}
                 right={true}
                 setText={setText}
+                setImage={setImage}
+                image={hiddenImage}
               />
             </div>
             <div

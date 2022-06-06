@@ -3,10 +3,14 @@ import { useState } from 'react';
 import classNames from 'classnames/bind';
 
 const SoundButton = (props) => {
-  const { sound, image, imgStyles, caption, setText } = props;
+  const { sound, image, imgStyles, caption, label, setText, buttonClass } = props;
   const [play, { stop }] = useSound(sound, {interrupt: true,});
   const [status, setStatus] = useState(false);
   const defaultText = "Tsinghua is full of sounds and sights. Click on an image to hear its sound. Click again to pause."
+
+  if (!buttonClass) {
+    const buttonClass = null;
+  }
 
   const handleClick = () => {
     if (status) {
@@ -23,10 +27,29 @@ const SoundButton = (props) => {
     }
   }
 
+  if (label) {
+    return (
+      <g>
+    <button onClick={handleClick} className={classNames(buttonClass, {"isActive": status})}>
+      <img style={imgStyles} src={image} className="card-image" />
+    </button>
+      <p style={{textAlign: "center",
+                marginTop: "8px",
+                color: "gray",
+                fontStyle: "italic",
+                fontFamily: "sans-serif",
+                fontWeight: 100
+              }}>
+              {label}
+      </p>
+    </g>
+    );
+  }
   return (
-  <button onClick={handleClick} className={classNames({"isActive": status})}>
+  <button onClick={handleClick} className={classNames(buttonClass, {"isActive": status})}>
     <img style={imgStyles} src={image} className="card-image" />
   </button>
+
   );
 };
 export default SoundButton;

@@ -97,22 +97,39 @@ tspan {
   }
 
   &.author {
-    font-size: 14px;
+    font-size: 18px;
     color: gray;
     font-weight: 300;
+  }
+
+
+  &.chinese-button {
+    font-weight: 600;
+    color: white;
+  }
+
+  &.english {
+    &.english-button {
+      font-weight: 600;
+      color: white;
+    }
+
+    &.chinese-button {
+      font-weight: 100;
+      color: black;
+    }
   }
 }
 
 img {
   position: relative;
   left: 0;
-  border-radius: 8px;
 
 }
 button {
   border-width: 0px;
   background-color: white;
-  height: 170px;
+  height: 210px;
   &.isActive {
     background-color: #73be73;
     border-radius: 8px;
@@ -146,12 +163,28 @@ button {
     }
   }
 
+  &.language {
+    margin: 0 12px;
+    margin-top: 4px;
+    height: 24px;
+    background: none;
+    font-size: 24px;
+  }
+
   &.choice:hover {
     border-width: 1px;
     border-color: gray;
     box-shadow: 0;
     background-color: #b44de0;
   }
+
+  &.image {
+    height: 100%;
+  }
+  &.image-small {
+    height: 90%;
+  }
+
 }
 
 .textbox {
@@ -160,14 +193,22 @@ button {
   margin: 0px auto;
   border: solid;
   border-color: #800080;
-  background-color: #e9d3ff;
+  background-color: #6a1a99;
   border-width: 0px;
   border-radius: 12px;
+  color: white;
+  font-size: 20px;
 
   &.tall {
-    height: 170px;
+    height: 120px;
     width: 100%;
     margin: 0 auto;
+  }
+
+  &.tall-with-margin {
+    height: 120px;
+    width: 100%;
+    margin: 30px auto;
   }
 
   &.long  {
@@ -188,7 +229,7 @@ button {
 
 .column {
   flex: 33%;
-  padding: 0 4px;
+  padding: 0 12px;
 }
 
 .column img {
@@ -212,7 +253,7 @@ footer {
 
 h1 {
   margin: 8px;
-  font-size: 20px;
+  font-size: 28px;
   font-family: "Palatino";
 
   &.big {
@@ -259,8 +300,13 @@ h3 {
 }
 
 path {
-    stroke: black;
-    stroke-width: 2px;
-    fill: none;
+    fill: gray;
+}
 
+.box {
+  width: 80%;
+}
+
+.label {
+  display: flex;
 }

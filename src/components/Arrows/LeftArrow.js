@@ -6,7 +6,7 @@ const LeftArrow = (props) => {
   const arrowStyles: CSSProperties = {
       position: "absolute",
       left: "8px",
-      background: "none",
+      background: "white",
       border: "none",
       top: "50%",
       width: "50px",
