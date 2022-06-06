@@ -1,10 +1,11 @@
 {
    "english":{
-     "title": {"big": "Sounds of Beijing", "byline1": "By Alex Zhao and Yucheng Tang",
-       "byline2": "策划与设计 ｜ 汤禹成 赵星宇", "subtitle": "We spent a year in Beijing, immersed in sounds and sights both strange and familiar.",
-       "instruction": "Click the arrows or hit your keyboard arrows to navigate the exhibit."
-     },
+
       "slides":[
+          {"caption": "Homepage", "big": "Sounds of Beijing", "byline1": "By Alex Zhao and Yucheng Tang",
+            "byline2": "策划与设计 ｜ 汤禹成 赵星宇", "subtitle": "We spent a year in Beijing, immersed in sounds and sights both strange and familiar.",
+            "instruction": "Click the arrows or hit your keyboard arrows to navigate the exhibit."
+          },
          {
             "caption":"Nature",
             "title":"Bird Song",
@@ -229,11 +230,11 @@
       ]
    },
    "chinese": {
-     "title": {"big": "北京之声", "byline1": "策划与设计 ｜ 汤禹成 赵星宇",
-       "byline2": "By Alex Zhao and Yucheng Tang", "subtitle": "我们在北京花了一年, 沉浸在又陌生又熟悉的声音和场景。",
-       "instruction": "点箭头或者按键盘箭头浏览展览。"
-     },
       "slides":[
+        {"caption": "主页", "big": "北京之声", "byline1": "策划与设计 ｜ 汤禹成 赵星宇",
+          "byline2": "By Alex Zhao and Yucheng Tang", "subtitle": "我们在北京花了一年, 沉浸在又陌生又熟悉的声音和场景。",
+          "instruction": "点箭头或者按键盘箭头浏览展览。"
+        },
          {
             "caption":"大自然",
             "title":"Bird Song",
@@ -426,7 +427,7 @@
          {
             "caption":"Nature",
             "title":"Exploring Nature Outside the City",
-            "author":"Serge-Raymond Nzabadora",
+            "author":"Serge-Raymond Nzabandora",
             "text":"Gubeikou and the Great Wall."
          },
          {

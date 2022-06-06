@@ -1,13 +1,11 @@
 {
   "files": {
     "main.css": "/sounds-beijing/static/css/main.4df70094.css",
-    "main.js": "/sounds-beijing/static/js/main.dda569b4.js",
+    "main.js": "/sounds-beijing/static/js/main.63b6a8a9.js",
     "static/js/845.ae9af00c.chunk.js": "/sounds-beijing/static/js/845.ae9af00c.chunk.js",
     "static/js/787.12425ee5.chunk.js": "/sounds-beijing/static/js/787.12425ee5.chunk.js",
     "static/media/bike.mp4": "/sounds-beijing/static/media/bike.d4fb85e1fd37cb81a813.mp4",
-    "static/media/old_singing.mp4": "/sounds-beijing/static/media/old_singing.59701404a21ff1790b8a.mp4",
     "static/media/boba.wav": "/sounds-beijing/static/media/boba.ce3ae892acc3efe136aa.wav",
-    "static/media/drums.mp4": "/sounds-beijing/static/media/drums.9ec8c8e8e026bb95a022.mp4",
     "static/media/jail.mp4": "/sounds-beijing/static/media/jail.8b893fb1d86130f3db6c.mp4",
     "static/media/singer.wav": "/sounds-beijing/static/media/singer.c5d0adfd7c0a06489d5d.wav",
     "static/media/boba.png": "/sounds-beijing/static/media/boba.035fb906ab4dc7299df8.png",
@@ -27,12 +25,12 @@
     "static/media/mystery.png": "/sounds-beijing/static/media/mystery.3d3eae1c8a7e1c742a46.png",
     "index.html": "/sounds-beijing/index.html",
     "main.4df70094.css.map": "/sounds-beijing/static/css/main.4df70094.css.map",
-    "main.dda569b4.js.map": "/sounds-beijing/static/js/main.dda569b4.js.map",
+    "main.63b6a8a9.js.map": "/sounds-beijing/static/js/main.63b6a8a9.js.map",
     "845.ae9af00c.chunk.js.map": "/sounds-beijing/static/js/845.ae9af00c.chunk.js.map",
     "787.12425ee5.chunk.js.map": "/sounds-beijing/static/js/787.12425ee5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4df70094.css",
-    "static/js/main.dda569b4.js"
+    "static/js/main.63b6a8a9.js"
   ]
 }
