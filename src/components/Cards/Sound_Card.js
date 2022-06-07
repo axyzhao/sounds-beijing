@@ -6,7 +6,7 @@ import { useState } from 'react';
 
 const Sound_Card = (props) => {
 
-  const { images, sounds, captions, labels, copy, index, toc } = props;
+  const { images, sounds, captions, labels, copy, index, toc, key } = props;
   const imgStyles: CSSProperties = {
     height: "200px",
     width: "200px",
@@ -39,6 +39,7 @@ const Sound_Card = (props) => {
                 imgStyles={imgStyles}
                 caption={captions[0]}
                 setText={setText}
+                key={key}
               />
             </div>
             <div
@@ -52,6 +53,8 @@ const Sound_Card = (props) => {
                 imgStyles={imgStyles}
                 caption={captions[1]}
                 setText={setText}
+                key={key}
+
               />
             </div>
             <div
@@ -65,6 +68,8 @@ const Sound_Card = (props) => {
                 imgStyles={imgStyles}
                 caption={captions[2]}
                 setText={setText}
+                key={key}
+
               />
             </div>
           </div>
@@ -83,6 +88,8 @@ const Sound_Card = (props) => {
                 imgStyles={imgStyles}
                 caption={captions[3]}
                 setText={setText}
+                key={key}
+
               />
             </div>
             <div
@@ -92,6 +99,7 @@ const Sound_Card = (props) => {
                 sound={sounds[4]}
                 image={images[4]}
                 label={labels[4]}
+                key={key}
 
                 imgStyles={imgStyles}
                 caption={captions[4]}
@@ -105,6 +113,7 @@ const Sound_Card = (props) => {
                 sound={sounds[5]}
                 image={images[5]}
                 label={labels[5]}
+                key={key}
 
                 imgStyles={imgStyles}
                 caption={captions[5]}

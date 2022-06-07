@@ -3,7 +3,7 @@ import { useState } from 'react';
 import classNames from 'classnames/bind';
 
 const SoundButton = (props) => {
-  const { sound, image, imgStyles, caption, label, setText, buttonClass } = props;
+  const { sound, image, imgStyles, caption, label, setText, buttonClass, key } = props;
   const [play, { stop }] = useSound(sound, {interrupt: true,});
   const [status, setStatus] = useState(false);
   const defaultText = "Tsinghua is full of sounds and sights. Click on an image to hear its sound. Click again to pause."
@@ -17,7 +17,7 @@ const SoundButton = (props) => {
       stop();
       setStatus(false);
       const arr = document.getElementsByClassName("isActive");
-      if (arr.length === 1) {
+      if (arr.length < 2) {
         setText(defaultText);
       }
     } else {
@@ -35,7 +35,7 @@ const SoundButton = (props) => {
     </button>
       <p style={{textAlign: "center",
                 marginTop: "8px",
-                color: "gray",
+                color: "#a9a9a9",
                 fontStyle: "italic",
                 fontFamily: "sans-serif",
                 fontWeight: 100

@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/sounds-beijing/static/css/main.386a2ea4.css",
-    "main.js": "/sounds-beijing/static/js/main.ae277310.js",
+    "main.js": "/sounds-beijing/static/js/main.54a5fcb4.js",
     "static/js/845.ae9af00c.chunk.js": "/sounds-beijing/static/js/845.ae9af00c.chunk.js",
     "static/js/787.12425ee5.chunk.js": "/sounds-beijing/static/js/787.12425ee5.chunk.js",
     "static/media/9.wav": "/sounds-beijing/static/media/9.c5d0adfd7c0a06489d5d.wav",
@@ -32,12 +32,12 @@
     "static/media/mystery.png": "/sounds-beijing/static/media/mystery.3d3eae1c8a7e1c742a46.png",
     "index.html": "/sounds-beijing/index.html",
     "main.386a2ea4.css.map": "/sounds-beijing/static/css/main.386a2ea4.css.map",
-    "main.ae277310.js.map": "/sounds-beijing/static/js/main.ae277310.js.map",
+    "main.54a5fcb4.js.map": "/sounds-beijing/static/js/main.54a5fcb4.js.map",
     "845.ae9af00c.chunk.js.map": "/sounds-beijing/static/js/845.ae9af00c.chunk.js.map",
     "787.12425ee5.chunk.js.map": "/sounds-beijing/static/js/787.12425ee5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.386a2ea4.css",
-    "static/js/main.ae277310.js"
+    "static/js/main.54a5fcb4.js"
   ]
 }

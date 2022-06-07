@@ -202,6 +202,7 @@ function constructChildren(clickers) {
       copy={slides[23]}
       index={3}
       toc={toc}
+      key={1}
     />,
 
     <Sound_Card
@@ -212,6 +213,7 @@ function constructChildren(clickers) {
       copy={slides[24]}
       index={3}
       toc={toc}
+      key={2}
     />,
 
     <Choice_Card
