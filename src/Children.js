@@ -32,7 +32,7 @@ function constructChildren(clickers) {
   const captions = copy["sound_captions"];
   const slides = copy['slides'];
   const toc_captions = slides.map((a) => a["caption"]);
-  const indices = [...Array(22).keys()];
+  const indices = [1, 2, 4, 6, 8, 12, 14, 15, 16, 19];
 
     const toc = (<TableContents
                 clickers={clickers}
@@ -63,13 +63,13 @@ function constructChildren(clickers) {
       video1={videos[21][0]}
       video2={videos[21][1]}
       video3={videos[21][2]}
-      copy={slides[22]}
+      copy={slides[3]}
       toc={toc}
     />,
     <Video_Card_Three
       video1={videos[2][0]}
       video2={videos[2][1]}
-      copy={slides[3]}
+      copy={slides[4]}
       toc={toc}
     />,
     <Video_Card_Seven
@@ -77,105 +77,105 @@ function constructChildren(clickers) {
       sound1={videos[3][1]}
       sound2={videos[3][2]}
       image1={videos[3][3]}
-      image2={mystery}
-      label1="HelloBike"
-      label2="Truck backing up"
-      copy={slides[4]}
+      image2={videos[3][4]}
+      label1="HelloBike unlocking"
+      label2="Kuaidi tricycle backing up"
+      copy={slides[5]}
       toc={toc}
     />,
     <Video_Card_Two
       video1={videos[4][0]}
       video2={videos[4][1]}
-      copy={slides[5]}
+      copy={slides[6]}
       toc={toc}
     />,
     <Video_Card_Two
       video1={videos[5][0]}
       video2={videos[5][1]}
-      copy={slides[6]}
+      copy={slides[7]}
       toc={toc}
     />,
     <Video_Card_Eight
       video1={videos[6][0]}
       video2={videos[6][1]}
       video3={videos[6][2]}
-      copy={slides[7]}
+      copy={slides[8]}
       toc={toc}
     />,
     <Video_Card_Nine
       video1={videos[7][0]}
       video2={videos[7][1]}
       video3={videos[7][2]}
-      copy={slides[8]}
+      copy={slides[9]}
       toc={toc}
     />,
     <Video_Card_Two
       video1={videos[8][0]}
       video2={videos[8][1]}
-      copy={slides[9]}
+      copy={slides[10]}
       toc={toc}
     />,
     <Video_Card_Nine
       video1={videos[9][0]}
       video2={videos[9][1]}
       video3={videos[9][2]}
-      copy={slides[10]}
+      copy={slides[11]}
       toc={toc}
     />,
     <Video_Card_Two
       video1={videos[10][0]}
       video2={videos[10][1]}
-      copy={slides[11]}
+      copy={slides[12]}
       toc={toc}
     />,
     <Video_Card_Two
       video1={videos[11][0]}
       video2={videos[11][1]}
-      copy={slides[12]}
+      copy={slides[13]}
       toc={toc}
     />,
     <Video_Card_Four
       video1={videos[12][0]}
       video2={videos[12][1]}
-      copy={slides[13]}
+      copy={slides[14]}
       toc={toc}
     />,
     <Video_Card_Five
       video1={videos[13][0]}
       video2={videos[13][1]}
       video3={videos[13][2]}
-      copy={slides[14]}
+      copy={slides[15]}
       toc={toc}
     />,
     <Video_Card_Three
       video1={videos[14][0]}
       video2={videos[14][1]}
-      copy={slides[15]}
+      copy={slides[16]}
       toc={toc}
     />,
     <Video_Card_Two
       video1={videos[15][0]}
       video2={videos[15][1]}
-      copy={slides[16]}
+      copy={slides[17]}
       toc={toc}
     />,
     <Video_Card_Five
       video1={videos[16][0]}
       video2={videos[16][1]}
       video3={videos[16][2]}
-      copy={slides[17]}
+      copy={slides[18]}
       toc={toc}
     />,
     <Video_Card_Three
       video1={videos[17][0]}
       video2={videos[17][1]}
-      copy={slides[18]}
+      copy={slides[19]}
       toc={toc}
     />,
     <Video_Card_Four
       video1={videos[18][0]}
       video2={videos[18][1]}
-      copy={slides[19]}
+      copy={slides[20]}
       toc={toc}
     />,
 
@@ -184,22 +184,32 @@ function constructChildren(clickers) {
       video2={videos[19][3]}
       sound={videos[19][1]}
       image={videos[19][0]}
-      copy={slides[20]}
+      copy={slides[21]}
       toc={toc}
       />,
     <Video_Card_Two
       video1={videos[20][0]}
       video2={videos[20][1]}
-      copy={slides[21]}
+      copy={slides[22]}
       toc={toc}
     />,
 
     <Sound_Card
-      images={images}
-      sounds={sounds}
-      captions={captions}
-      labels={copy["sound_labels"]}
-      copy={slides[22]}
+      images={images.slice(0, 6)}
+      sounds={sounds.slice(0, 6)}
+      captions={captions.slice(0, 6)}
+      labels={copy["sound_labels"].slice(0, 6)}
+      copy={slides[23]}
+      index={3}
+      toc={toc}
+    />,
+
+    <Sound_Card
+      images={images.slice(6, 12)}
+      sounds={sounds.slice(6, 12)}
+      captions={captions.slice(6, 12)}
+      labels={copy["sound_labels"].slice(6, 12)}
+      copy={slides[24]}
       index={3}
       toc={toc}
     />,
@@ -209,10 +219,11 @@ function constructChildren(clickers) {
       mystery={mystery}
       sound={videos[22][0]}
       captions={copy["multiple_choice"]}
-      copy={slides[23]}
+      copy={slides[25]}
       index={4}
       toc={toc}
-    />]
+    />
+  ]
 
     return children;
 };

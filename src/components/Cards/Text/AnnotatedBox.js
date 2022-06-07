@@ -16,7 +16,7 @@ const AnnotatedBox = (props) => {
     </svg>
       <g className="box">
         <Title title={copy["title"]} author={copy["author"]} />
-        <Textbox copy={copy["text"]} type="tall"/>
+        <Textbox copy={copy["text"]} type="medium"/>
       </g>
 
     </div>

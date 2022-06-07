@@ -22,9 +22,6 @@ function App(props)
   }
   const children = constructChildren(clickers);
 
-  function asd(a) {
-    console.log(a);
-  }
   return (
     <div>
       <Carousel
@@ -39,19 +36,16 @@ function App(props)
               hasPrev && (<LeftArrow onClickHandler={onClickHandler} label={label}/>)}
           renderArrowNext={(onClickHandler, hasNext, label) =>
         hasNext && (<RightArrow onClickHandler={onClickHandler} label={label}/>)}
-          selectedItem={(a) => {asd(a)}}
-
           statusFormatter={(current, total) =>
         (<Progress total={total} current={current}/>)}
           useKeyboardArrows={true}
-
       >
 
       {children.map((child, index) => {
               if (
                 index === currentIndex ||
                 index === currentIndex+ 1 ||
-                index === currentIndex + 2 ||
+                index === currentIndex+ 2 ||
                 index === currentIndex - 1
               ) {
                 return child;

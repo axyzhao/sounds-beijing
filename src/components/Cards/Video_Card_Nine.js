@@ -28,7 +28,7 @@ const Video_Card_Nine = (props) => {
               <div className="video-container" style={{width: "80%", height: "76%"}}>
               <g>
                 <Title title={copy["title"]} author={copy["author"]} />
-                <Textbox id={`${index}`} copy={copy["text"]} type="tall"/>
+                <Textbox id={`${index}`} copy={copy["text"]} type="middle"/>
                 </g>
 
                 <Player

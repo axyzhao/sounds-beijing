@@ -1,29 +1,28 @@
-import jail from './Audio/jail.mp4';
-import jail_pic from './Audio/jail.png';
+import audio1 from './Audio/1.m4a';
+import img1 from './Audio/1.png';
+import audio2 from './Audio/2.wav';
+import img2 from './Audio/2.png';
+import audio3 from './Audio/3.m4a';
+import img3 from './Audio/3.png';
+import audio4 from './Audio/4.m4a';
+import img4 from './Audio/4.png';
+import audio5 from './Audio/5.m4a';
+import img5 from './Audio/5.png';
+import audio6 from './Audio/6.m4a';
+import img6 from './Audio/6.png';
+import audio7 from './Audio/7.m4a';
+import img7 from './Audio/7.png';
+import audio8 from './Audio/8.m4a';
+import img8 from './Audio/8.png';
+import audio9 from './Audio/9.wav';
+import img9 from './Audio/9.png';
+import audio10 from './Audio/10.m4a';
+import img10 from './Audio/10.png';
+import audio11 from './Audio/11.m4a';
+import img11 from './Audio/11.png';
+import audio12 from './Audio/12.wav';
+import img12 from './Audio/12.png';
 
-import waterfall from './Audio/waterfall.wav';
-import waterfall_pic from './Audio/waterfall.png';
-
-import boba from './Audio/boba.wav';
-import boba_pic from './Audio/boba.png';
-
-import manzou from './Audio/manzou.wav';
-import manzou_pic from './Audio/boba.png';
-
-import thesis from './Audio/thesis.mp4';
-import thesis_pic from './Audio/thesis.png';
-
-import singer from './Audio/singer.wav';
-import singer_pic from './Audio/singer.png';
-
-import bike from './Audio/bike.mp4';
-import bike_pic from './Audio/bike.png';
-
-import temp from './Audio/temperature.m4a';
-import temp_pic from './Audio/temperature.png';
-
-import hello from './Audio/hello.m4a';
-import hello_pic from './Audio/hello.png';
 function Import(props) {
 
   const one1 = 'https://d3nerocoi848zq.cloudfront.net/Images/bird_1_1.mp4';
@@ -40,6 +39,7 @@ function Import(props) {
   const four2 = 'https://d3nerocoi848zq.cloudfront.net/Images/robot_4_2.m4a';
   const four3 = 'https://d3nerocoi848zq.cloudfront.net/Images/robot_4_3.m4a';
   const four4 = 'https://d3nerocoi848zq.cloudfront.net/Images/robot_4_4.png';
+  const four5 = 'https://d3nerocoi848zq.cloudfront.net/Images/robot_4_5.png';
 
   const five1 = 'https://d3nerocoi848zq.cloudfront.net/Images/music_5_1.mp4';
   const five2 = 'https://d3nerocoi848zq.cloudfront.net/Images/music_5_2.mp4';
@@ -103,16 +103,14 @@ function Import(props) {
   const twentyt2 = 'https://d3nerocoi848zq.cloudfront.net/Images/nature_22_2.mp4';
   const twentyt3 = 'https://d3nerocoi848zq.cloudfront.net/Images/nature_22_3.mp4';
 
-
   const guess_audio = 'https://d3nerocoi848zq.cloudfront.net/Images/guess.m4a';
   const guess_img = 'https://d3nerocoi848zq.cloudfront.net/Images/guess.png';
 
-  const Images = [jail_pic, waterfall_pic, boba_pic,
-    manzou_pic, thesis_pic, singer_pic, bike_pic, hello_pic, temp_pic];
-  const sounds = [jail, waterfall, boba,
-      manzou, thesis, singer, bike, hello, temp];
+  const images = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12];
+  const sounds = [audio1, audio2, audio3, audio4, audio5, audio6, audio7, audio8, audio9,
+  audio10, audio11, audio12];
   const slides = [[one1, one2], [two1, two2,two3], [three1, three2],
-  [four1, four2, four3, four4], [five1, five2], [six1, six2],
+  [four1, four2, four3, four4, four5], [five1, five2], [six1, six2],
   [seven1, seven2, seven3], [eight1, eight2, eight3], [nine1, nine2],
   [ten1, ten2, ten3], [eleven1, eleven2], [twelve1, twelve2], [thirt1, thirt2],
   [fourt1, fourt2, fourt3], [fift1, fift2], [sixt1, sixt2],
@@ -121,7 +119,7 @@ function Import(props) {
   [twentyt1, twentyt2, twentyt3],
   [guess_audio, guess_img]
 ];
-  return [Images, sounds, slides];
+  return [images, sounds, slides];
 }
 
 export default Import;

@@ -20,6 +20,7 @@ const Progress = (props) => {
         height="20px"
         borderRadius="0px"
         baseBgColor="black"
+        transitionDuration="0.5s"
       />
     </footer>,
     root

@@ -43,7 +43,7 @@ const Video_Card_Ten = (props) => {
                     caption={caption}
                     setText={setText}
                     label={label}
-                    buttonClass="image-small"
+                    buttonClass="image-big"
                   />
                 </div>
 

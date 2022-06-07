@@ -182,9 +182,11 @@ button {
     height: 100%;
   }
   &.image-small {
+    height: 90%;
+  }
+  &.image-big {
     height: 104%;
   }
-
 }
 
 .textbox {
@@ -212,7 +214,11 @@ button {
   }
 
   &.long  {
-    height: 64px;
+    height: 84px;
+  }
+
+  &.middle  {
+    width: 100%;
   }
 }
 
