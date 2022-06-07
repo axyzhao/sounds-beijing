@@ -32,7 +32,7 @@ function constructChildren(clickers) {
   const captions = copy["sound_captions"];
   const slides = copy['slides'];
   const toc_captions = slides.map((a) => a["caption"]);
-  const indices = [1, 2, 4, 6, 8, 12, 14, 15, 16, 19];
+  const indices = [0, 1,  4,  6,  8, 10, 11, 12, 14, 18, 19, 21, 22, 23, 25];
 
     const toc = (<TableContents
                 clickers={clickers}
