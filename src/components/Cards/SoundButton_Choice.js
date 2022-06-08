@@ -24,7 +24,7 @@ const SoundButton_Choice = (props) => {
   }
 
   return (
-  <button onClick={handleClick} className={classNames({"mystery": true, "isActive": status})}>
+  <button onClick={handleClick} className={classNames({"mystery": true, "sound-isActive": status})}>
     <img style={mysteryStyles} src={image} />
   </button>
   );
