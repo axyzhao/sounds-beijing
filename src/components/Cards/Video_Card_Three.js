@@ -5,7 +5,7 @@ import Title from './Text/Title';
 import classNames from "classnames";
 
 const Video_Card_Three = (props) => {
-  const { video1, video2, copy, index, toc } = props;
+  const { video1,lang, video2, copy, index, toc } = props;
   const caption = copy["caption"];
 
   return (
@@ -23,7 +23,7 @@ const Video_Card_Three = (props) => {
           <div className="cell" style={{width: "100%"}}>
           <div className="video-container" style={{width: "100%"}}>
             <Title title={copy["title"]} author={copy["author"]} />
-            <Textbox id={`${index}`} copy={copy["text"]} type="tall"/>
+            <Textbox lang={lang} copy={copy["text"]} type="tall"/>
                 <Player
                   src={video2}
                   autoplay={true}

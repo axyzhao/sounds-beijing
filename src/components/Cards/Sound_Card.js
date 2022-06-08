@@ -6,7 +6,7 @@ import { useState } from 'react';
 
 const Sound_Card = (props) => {
 
-  const { images, sounds, captions, labels, copy, index, toc, key } = props;
+  const { images, lang, sounds, captions, labels, copy, index, toc, key } = props;
   const imgStyles: CSSProperties = {
     height: "200px",
     width: "200px",
@@ -23,7 +23,7 @@ const Sound_Card = (props) => {
     <div className="card-container">
       <Label className={caption} caption={caption} toc={toc} />
       <Title title={title} author={author} />
-      <Textbox copy={text} type="long" />
+      <Textbox lang={lang} copy={text} type="long" />
       <div className="card" style={{"textAlign": "center"}}>
         <div className="table">
           <div

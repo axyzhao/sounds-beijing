@@ -6,7 +6,7 @@ import classNames from "classnames";
 import SoundButton from './SoundButton';
 
 const Video_Card_Ten = (props) => {
-  const { video1, video2, sound, image, copy, index, label, toc } = props;
+  const { video1, lang, video2, sound, image, copy, index, label, toc } = props;
 
   const caption = copy["caption"];
   const setText = (a) => {return null};
@@ -33,7 +33,7 @@ const Video_Card_Ten = (props) => {
               <div className="video-container" style={{width: "80%", height: "76%"}}>
                 <g>
                 <Title title={copy["title"]} author={copy["author"]} />
-                <Textbox id={`${index}`} copy={copy["text"]} type="middle"/>
+                <Textbox lang={lang} copy={copy["text"]} type="middle"/>
                 </g>
                 <div style={{height: "50%"}}>
                   <SoundButton

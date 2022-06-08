@@ -2,7 +2,7 @@ import Textbox from './Textbox';
 import Title from './Title';
 
 const AnnotatedBox = (props) => {
-  const { xPos, yPos, triHeight, copy, left } = props;
+  const { xPos, yPos, lang, triHeight, copy, left } = props;
 
   if (left) {
     return (
@@ -16,7 +16,7 @@ const AnnotatedBox = (props) => {
     </svg>
       <g className="box">
         <Title title={copy["title"]} author={copy["author"]} />
-        <Textbox copy={copy["text"]} type="medium"/>
+        <Textbox lang={lang} copy={copy["text"]} type="medium"/>
       </g>
 
     </div>
@@ -26,7 +26,7 @@ const AnnotatedBox = (props) => {
   <div style={{display: "flex", "flexDirection": "row"}}>
     <g className="box">
       <Title title={copy["title"]} author={copy["author"]} />
-      <Textbox copy={copy["text"]} type="tall"/>
+      <Textbox lang={lang} copy={copy["text"]} type="tall"/>
     </g>
     <svg viewBox="0 0 100 100" style={{width: "150px"}}>
       {/*

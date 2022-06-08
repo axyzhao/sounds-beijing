@@ -220,6 +220,11 @@ button {
   &.middle  {
     width: 100%;
   }
+
+  &#chinese {
+    font-size: 18px;
+    font-family: "FangSong";
+  }
 }
 
 .arrow {
@@ -299,10 +304,6 @@ h3 {
   &.subtitle {
     font-family: "Palatino";
   }
-}
-
-.choice_button {
-  width: 200px;
 }
 
 path {

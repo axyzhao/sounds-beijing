@@ -82,7 +82,7 @@ function Import(props) {
   const sixt2 = 'https://d3nerocoi848zq.cloudfront.net/Images/concert_16_2.mp4';
 
   const sevent1 = 'https://d3nerocoi848zq.cloudfront.net/Images/food_17_1.mp4';
-  const sevent2 = 'https://d3nerocoi848zq.cloudfront.net/Images/food_17_2.mp4';
+  const sevent2 = 'https://d3nerocoi848zq.cloudfront.net/Images/food_17_4.mp4';
   const sevent3 = 'https://d3nerocoi848zq.cloudfront.net/Images/food_17_3.mp4';
 
   const eighteen1 = 'https://d3nerocoi848zq.cloudfront.net/Images/sports_18_1.mp4';
@@ -103,8 +103,9 @@ function Import(props) {
   const twentyt2 = 'https://d3nerocoi848zq.cloudfront.net/Images/nature_22_2.mp4';
   const twentyt3 = 'https://d3nerocoi848zq.cloudfront.net/Images/nature_22_3.mp4';
 
-  const guess_audio = 'https://d3nerocoi848zq.cloudfront.net/Images/guess.m4a';
-  const guess_img = 'https://d3nerocoi848zq.cloudfront.net/Images/guess.png';
+  const guess = 'https://d3nerocoi848zq.cloudfront.net/Images/guess_tea.mp4';
+  const guess2 = 'https://d3nerocoi848zq.cloudfront.net/Images/guess_fish.mp4';
+
 
   const images = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12];
   const sounds = [audio1, audio2, audio3, audio4, audio5, audio6, audio7, audio8, audio9,
@@ -117,7 +118,7 @@ function Import(props) {
   [sevent1, sevent2, sevent3], [eighteen1, eighteen2], [ninet1, ninet2],
   [twenty1, twenty2, twenty3, twenty4], [twento1, twento2],
   [twentyt1, twentyt2, twentyt3],
-  [guess_audio, guess_img]
+  [guess], [guess2]
 ];
   return [images, sounds, slides];
 }

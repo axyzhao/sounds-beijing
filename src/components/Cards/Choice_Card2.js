@@ -7,11 +7,11 @@ import Title from './Text/Title';
 import Textbox from './Text/Textbox';
 import SoundButton_Choice from './SoundButton_Choice';
 
-const Choice_Card = (props) => {
+const Choice_Card2 = (props) => {
+
   const { sound, mystery, hiddenImage, copy,
     index, toc, lang, button_key } = props;
 
-  console.log(button_key);
   const [play, { stop }] = useSound(sound, {interrupt: true,});
   const [text, setText] = useState(copy['text']);
   const [show, setShow] = useState(false);
@@ -55,9 +55,7 @@ const Choice_Card = (props) => {
             >
               <ChoiceButton
                 caption={captions[0]}
-                right={true}
-                setText={setText}
-                setShow={setShow}
+                right={false}
                 image={hiddenImage}
                 button_key={button_key}
               />
@@ -77,8 +75,9 @@ const Choice_Card = (props) => {
             >
             <ChoiceButton
               caption={captions[2]}
-              right={false}
+              right={true}
               setText={setText}
+              setShow={setShow}
               button_key={button_key}
             />
             </div>
@@ -125,4 +124,4 @@ const Choice_Card = (props) => {
   );
 };
 
-export default Choice_Card;
+export default Choice_Card2;

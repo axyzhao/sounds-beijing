@@ -5,14 +5,14 @@ import Title from './Text/Title';
 import classNames from "classnames";
 
 const Video_Card_Eight = (props) => {
-  const { video1, video2, video3, copy, index, toc } = props;
+  const { lang, video1, video2, video3, copy, index, toc } = props;
   const caption = copy["caption"];
 
   return (
     <div className="card-container">
     <Label caption={caption} toc={toc} />
       <Title title={copy["title"]} author={copy["author"]} />
-      <Textbox id={`${index}`} copy={copy["text"]} type="long"/>
+      <Textbox lang={lang} copy={copy["text"]} type="long"/>
       <div className="card">
           <div className="cell" style={{width: "80%"}}>
           <div className="video-container" style={{width: "58%"}}>

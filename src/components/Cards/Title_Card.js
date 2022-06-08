@@ -4,15 +4,17 @@ import classNames from 'classnames/bind';
 import { useState } from 'react';
 
 const Title_Card = (props) => {
-  const { title_copy, copyEnglish, copyChinese, setCopy } = props;
+  const { title_copy, copyEnglish, copyChinese, setCopy, setLang } = props;
   const [english, setEnglish] = useState(true);
   const handleClick = () => {
     if (english) {
       setEnglish(false);
       setCopy(copyChinese);
+      setLang("chinese");
     } else {
       setEnglish(true);
       setCopy(copyEnglish);
+      setLang("english");
     }
   }
   return (

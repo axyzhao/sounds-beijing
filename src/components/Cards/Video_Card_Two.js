@@ -5,7 +5,7 @@ import Label from './Text/Label';
 import classNames from "classnames";
 
 const Video_Card_Two = (props) => {
-  const { video1, video2, copy, index, toc } = props;
+  const { video1, video2, lang, copy, index, toc } = props;
 
   const copy1 = copy["one"];
   const copy2 = copy["two"];
@@ -31,11 +31,13 @@ const Video_Card_Two = (props) => {
                               triHeight={30}
                               copy={copy1}
                               left={true}
+                              lang={lang}
                               />
                 <AnnotatedBox xPos={30}
                               triHeight={30}
                               yPos={80}
                               copy={copy2}
+                              lang={lang}
                               />
               </div>
           </div>

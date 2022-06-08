@@ -5,7 +5,7 @@ import Title from './Text/Title';
 import classNames from "classnames";
 
 const Video_Card_One = (props) => {
-  const { video, copy, index, toc } = props;
+  const { video, lang, copy, index, toc } = props;
 
   const caption = copy['caption'];
   const title = copy['title'];
@@ -31,7 +31,7 @@ const Video_Card_One = (props) => {
               >
                 <Title title={title} author={author} />
 
-                <Textbox id={`${index}`} copy={text} type="tall"/>
+                <Textbox lang={lang} copy={text} type="tall"/>
               </div>
           </div>
         </div>

@@ -5,7 +5,7 @@ import Title from './Text/Title';
 import classNames from "classnames";
 
 const Video_Card_Nine = (props) => {
-  const { video1, video2, video3, copy, index, toc} = props;
+  const { video1, lang, video2, video3, copy, index, toc} = props;
 
   const caption = copy["caption"];
 
@@ -28,7 +28,7 @@ const Video_Card_Nine = (props) => {
               <div className="video-container" style={{width: "80%", height: "76%"}}>
               <g>
                 <Title title={copy["title"]} author={copy["author"]} />
-                <Textbox copy={copy["text"]} type="middle"/>
+                <Textbox lang={lang} copy={copy["text"]} type="middle"/>
                 </g>
 
                 <Player

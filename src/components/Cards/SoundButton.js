@@ -3,7 +3,7 @@ import { useState } from 'react';
 import classNames from 'classnames/bind';
 
 const SoundButton = (props) => {
-  const { sound, image, imgStyles, caption, label, setText, buttonClass, key } = props;
+  const { sound, image, imgStyles, caption, label, setText, buttonClass } = props;
   const [play, { stop }] = useSound(sound, {interrupt: true,});
   const [status, setStatus] = useState(false);
   const defaultText = "Tsinghua is full of sounds and sights. Click on an image to hear its sound. Click again to pause."
