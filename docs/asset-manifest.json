@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/sounds-beijing/static/css/main.386a2ea4.css",
-    "main.js": "/sounds-beijing/static/js/main.a9a353c8.js",
+    "main.css": "/sounds-beijing/static/css/main.df725b9c.css",
+    "main.js": "/sounds-beijing/static/js/main.a17d6bf7.js",
     "static/js/845.ae9af00c.chunk.js": "/sounds-beijing/static/js/845.ae9af00c.chunk.js",
     "static/js/787.12425ee5.chunk.js": "/sounds-beijing/static/js/787.12425ee5.chunk.js",
     "static/media/9.wav": "/sounds-beijing/static/media/9.c5d0adfd7c0a06489d5d.wav",
@@ -12,6 +12,7 @@
     "static/media/7.png": "/sounds-beijing/static/media/7.530b5df222536cd9b6d9.png",
     "static/media/8.png": "/sounds-beijing/static/media/8.6f47796acdea6e7927e4.png",
     "static/media/10.png": "/sounds-beijing/static/media/10.676b0f3a3327b25c7952.png",
+    "static/media/bar_11_1.mp4": "/sounds-beijing/static/media/bar_11_1.dca468ecbba613371bb9.mp4",
     "static/media/6.png": "/sounds-beijing/static/media/6.aa17a07aa1a7bd244329.png",
     "static/media/3.png": "/sounds-beijing/static/media/3.b90e7709c01f28208268.png",
     "static/media/12.wav": "/sounds-beijing/static/media/12.f6a46c5b7c0fd1e47ec2.wav",
@@ -31,13 +32,13 @@
     "static/media/11.m4a": "/sounds-beijing/static/media/11.7637d839012ead458bb7.m4a",
     "static/media/mystery.png": "/sounds-beijing/static/media/mystery.3d3eae1c8a7e1c742a46.png",
     "index.html": "/sounds-beijing/index.html",
-    "main.386a2ea4.css.map": "/sounds-beijing/static/css/main.386a2ea4.css.map",
-    "main.a9a353c8.js.map": "/sounds-beijing/static/js/main.a9a353c8.js.map",
+    "main.df725b9c.css.map": "/sounds-beijing/static/css/main.df725b9c.css.map",
+    "main.a17d6bf7.js.map": "/sounds-beijing/static/js/main.a17d6bf7.js.map",
     "845.ae9af00c.chunk.js.map": "/sounds-beijing/static/js/845.ae9af00c.chunk.js.map",
     "787.12425ee5.chunk.js.map": "/sounds-beijing/static/js/787.12425ee5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.386a2ea4.css",
-    "static/js/main.a9a353c8.js"
+    "static/css/main.df725b9c.css",
+    "static/js/main.a17d6bf7.js"
   ]
 }
