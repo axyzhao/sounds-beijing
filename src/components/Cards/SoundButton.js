@@ -16,8 +16,9 @@ const SoundButton = (props) => {
     if (status) {
       stop();
       setStatus(false);
-      const arr = document.getElementsByClassName("isActive");
-      if (arr.length < 2) {
+      const arr = document.getElementsByClassName("sound-isActive");
+      console.log(arr);
+      if (arr.length === 1) {
         setText(defaultText);
       }
     } else {
@@ -30,7 +31,7 @@ const SoundButton = (props) => {
   if (label) {
     return (
       <g>
-    <button onClick={handleClick} className={classNames(buttonClass, {"isActive": status})}>
+    <button onClick={handleClick} className={classNames(buttonClass, {"sound-isActive": status})}>
       <img style={imgStyles} src={image} className="card-image" />
     </button>
       <p style={{textAlign: "center",
@@ -46,7 +47,7 @@ const SoundButton = (props) => {
     );
   }
   return (
-  <button onClick={handleClick} className={classNames(buttonClass, {"isActive": status})}>
+  <button onClick={handleClick} className={classNames(buttonClass, {"sound-isActive": status})}>
     <img style={imgStyles} src={image} className="card-image" />
   </button>
 

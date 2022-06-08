@@ -11,7 +11,6 @@ const Choice_Card = (props) => {
   const { sound, mystery, hiddenImage, copy,
     index, toc, lang, button_key } = props;
 
-  console.log(button_key);
   const [play, { stop }] = useSound(sound, {interrupt: true,});
   const [text, setText] = useState(copy['text']);
   const [show, setShow] = useState(false);
