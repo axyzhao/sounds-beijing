@@ -60,7 +60,7 @@ function Import(props) {
 
   const ten1 = 'https://d3nerocoi848zq.cloudfront.net/Images/city_10_1.mp4';
   const ten2 = 'https://d3nerocoi848zq.cloudfront.net/Images/city_10_2.mp4';
-  const ten3 = 'https://d3nerocoi848zq.cloudfront.net/Images/city_10_3.mp4';
+  const ten3 = 'https://d3nerocoi848zq.cloudfront.net/Images/city_10_4.mp4';
 
   const eleven1 = 'https://d3nerocoi848zq.cloudfront.net/Images/bar_11_1.mp4';
   const eleven2 = 'https://d3nerocoi848zq.cloudfront.net/Images/bar_11_2.mp4';
