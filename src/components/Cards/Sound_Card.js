@@ -40,6 +40,7 @@ const Sound_Card = (props) => {
                 caption={captions[0]}
                 setText={setText}
                 key={key}
+                lang={lang}
               />
             </div>
             <div
@@ -49,7 +50,7 @@ const Sound_Card = (props) => {
                 sound={sounds[1]}
                 image={images[1]}
                 label={labels[1]}
-
+                lang={lang}
                 imgStyles={imgStyles}
                 caption={captions[1]}
                 setText={setText}
@@ -64,7 +65,7 @@ const Sound_Card = (props) => {
                 sound={sounds[2]}
                 image={images[2]}
                 label={labels[2]}
-
+                lang={lang}
                 imgStyles={imgStyles}
                 caption={captions[2]}
                 setText={setText}
@@ -84,7 +85,7 @@ const Sound_Card = (props) => {
                 sound={sounds[3]}
                 image={images[3]}
                 label={labels[3]}
-
+                lang={lang}
                 imgStyles={imgStyles}
                 caption={captions[3]}
                 setText={setText}
@@ -100,7 +101,7 @@ const Sound_Card = (props) => {
                 image={images[4]}
                 label={labels[4]}
                 key={key}
-
+                lang={lang}
                 imgStyles={imgStyles}
                 caption={captions[4]}
                 setText={setText}
@@ -114,7 +115,7 @@ const Sound_Card = (props) => {
                 image={images[5]}
                 label={labels[5]}
                 key={key}
-
+                lang={lang}
                 imgStyles={imgStyles}
                 caption={captions[5]}
                 setText={setText}

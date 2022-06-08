@@ -3,11 +3,15 @@ import { useState } from 'react';
 import classNames from 'classnames/bind';
 
 const SoundButton = (props) => {
-  const { sound, image, imgStyles, caption, label, setText, buttonClass } = props;
+  const { sound, image, imgStyles, caption, label, setText, buttonClass, lang } = props;
   const [play, { stop }] = useSound(sound, {interrupt: true,});
   const [status, setStatus] = useState(false);
-  const defaultText = "Tsinghua is full of sounds and sights. Click on an image to hear its sound. Click again to pause."
-
+  var defaultText;
+  if (lang === "english") {
+    defaultText = "Tsinghua is full of sounds and sights. Click on an image to hear its sound. Click again to pause.";
+  } else {
+    defaultText = "点击图像可以聆听声音，再次点击则暂停声音。";
+  }
   if (!buttonClass) {
     const buttonClass = null;
   }
