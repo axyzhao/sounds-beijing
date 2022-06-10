@@ -2,7 +2,6 @@ import './App.css';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import "video-react/dist/video-react.css"; // import css
 import { useState } from 'react';
-
 import { Carousel } from 'react-responsive-carousel';
 
 import constructChildren from './Children';

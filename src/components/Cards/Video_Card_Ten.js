@@ -6,14 +6,41 @@ import classNames from "classnames";
 import SoundButton from './SoundButton';
 
 const Video_Card_Ten = (props) => {
-  const { video1, lang, video2, sound, image, copy, index, label, toc } = props;
+  const { video1, lang, video2, sound,
+    image, copy, index, label, toc, mobile } = props;
 
   const caption = copy["caption"];
   const setText = (a) => {return null};
-  const imgStyles: CSSProperties = {
+  if (mobile) {
+    return (
+      <div className="card-container">
+      <Label caption={caption} toc={toc} />
 
+        <div className="card">
+
+          <Title title={copy["title"]} author={copy["author"]} />
+          <Textbox lang={lang} copy={copy["text"]} type="middle"/>
+            <SoundButton
+              sound={sound}
+              image={image}
+              imgStyles={imgStyles}
+              caption={caption}
+              setText={setText}
+              label={label}
+              buttonClass="image-big"
+            />
+            <Player
+              src={video1}
+              autoplay={true}
+            />
+            <Player
+              src={video2}
+              autoplay={true}
+                />
+            </div>
+        </div>
+    );
   }
-
   return (
     <div className="card-container">
     <Label caption={caption} toc={toc} />

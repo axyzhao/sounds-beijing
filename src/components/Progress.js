@@ -3,11 +3,6 @@ import ReactDOM from 'react-dom';
 
 const Progress = (props) => {
   const { current, total } = props;
-  const barStyles: CSSProperties = {
-    position: "absolute",
-    top: "730px",
-    right: "0px",
-    }
 
   const root = document.getElementById('root');
 

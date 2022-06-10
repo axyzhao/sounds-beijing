@@ -13,8 +13,12 @@ code {
 }
 
 .card-container {
-  height: 750px;
+  height: 100vh;
   margin: auto;
+
+  @media screen and (max-width: 600px) {
+    overflow: scroll;
+  }
 }
 
 a {
@@ -57,6 +61,12 @@ a:hover {
   height: 95%;
   display: flex;
   flex-direction: row;
+
+  @media screen and (max-width: 600px) {
+    display: block;
+    padding: 0px 72px;
+  }
+
 }
 
 p {
@@ -201,20 +211,14 @@ button {
   color: white;
   font-size: 19px;
 
+
   &.tall {
-    height: 120px;
     width: 100%;
-    margin: 0 auto;
   }
 
   &.tall-with-margin {
-    height: 120px;
     width: 100%;
     margin: 30px auto;
-  }
-
-  &.long  {
-    height: 84px;
   }
 
   &.middle  {
@@ -224,6 +228,29 @@ button {
   &#chinese {
     font-size: 18px;
     font-family: "FangSong";
+  }
+  @media screen and (min-width: 600px) {
+    &.tall {
+      height: 120px;
+      margin: 0 auto;
+
+    }
+    &.tall-with-margin {
+      height: 120px;
+    }
+
+    &.long  {
+      height: 84px;
+    }
+  }
+
+  &#chinese {
+    font-size: 18px;
+    font-family: "FangSong";
+  }
+  @media screen and (max-width: 600px) {
+    margin-bottom: 48px;
+    margin-top: 48px;
   }
 }
 
@@ -258,8 +285,10 @@ footer {
   bottom: 0;
   top: auto;
   display: block;
-  position: absolute;
   width: 100%;
+  @media screen and (min-width: 600px) {
+    position: absolute;
+  }
 }
 
 h1 {
@@ -316,4 +345,11 @@ path {
 
 .label {
   display: flex;
+}
+
+.video-react {
+  @media screen and (max-width: 600px) {
+    margin: 48px 0;
+  }
+
 }

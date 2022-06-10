@@ -5,9 +5,28 @@ import Title from './Text/Title';
 import classNames from "classnames";
 
 const Video_Card_Three = (props) => {
-  const { video1,lang, video2, copy, index, toc } = props;
+  const { video1,lang, video2, copy, index, toc, mobile } = props;
   const caption = copy["caption"];
 
+  if (mobile) {
+    return (
+      <div className="card-container">
+      <Label caption={caption} toc={toc} />
+        <div className="card">
+              <Title title={copy["title"]} author={copy["author"]} />
+              <Player
+                src={video1}
+                autoplay={true}
+              />
+              <Textbox lang={lang} copy={copy["text"]} type="tall"/>
+              <Player
+                src={video2}
+                autoplay={true}
+              />
+            </div>
+        </div>
+    );
+  }
   return (
     <div className="card-container">
     <Label caption={caption} toc={toc} />
