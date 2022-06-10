@@ -258,7 +258,7 @@ function constructChildren(clickers) {
       copy={slides[23]}
       toc={toc}
       lang={lang}
-    mobile={mobile}
+      mobile={mobile}
 />,
 
     <Sound_Card

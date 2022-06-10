@@ -9,7 +9,7 @@ import SoundButton_Choice from './SoundButton_Choice';
 
 const Choice_Card = (props) => {
   const { sound, mystery, hiddenImage, copy,
-    index, toc, lang, button_key } = props;
+    index, toc, lang, button_key, mobile } = props;
 
   const [play, { stop }] = useSound(sound, {interrupt: true,});
   const [text, setText] = useState(copy['text']);
@@ -34,6 +34,59 @@ const Choice_Card = (props) => {
                   </video>);
   } else {
     comp = <SoundButton_Choice sound={sound} image={mystery} />;
+  }
+
+  if (mobile) {
+    return (
+      <div className="card-container">
+        <Label className={caption} caption={caption} toc={toc} />
+        <Title title={title} author={author} />
+        {comp}
+
+        <Textbox lang={lang} copy={text} type="long" />
+
+        <div className="card" style={{"textAlign": "center"}}>
+                <ChoiceButton
+                  caption={captions[0]}
+                  right={true}
+                  setText={setText}
+                  setShow={setShow}
+                  image={hiddenImage}
+                  button_key={button_key}
+                />
+                <ChoiceButton
+                  caption={captions[1]}
+                  right={false}
+                  setText={setText}
+                  button_key={button_key}
+                />
+              <ChoiceButton
+                caption={captions[2]}
+                right={false}
+                setText={setText}
+                button_key={button_key}
+              />
+              <ChoiceButton
+                caption={captions[3]}
+                right={false}
+                setText={setText}
+                button_key={button_key}
+              />
+              <ChoiceButton
+                caption={captions[4]}
+                right={false}
+                setText={setText}
+                button_key={button_key}
+              />
+              <ChoiceButton
+                caption={captions[5]}
+                right={false}
+                setText={setText}
+                button_key={button_key}
+              />
+          </div>
+      </div>
+    );
   }
 
   return (
@@ -119,7 +172,6 @@ const Choice_Card = (props) => {
             </div>
           </div>
       </div>
-      {/* <p className="legend">{caption}</p> */}
     </div>
   );
 };

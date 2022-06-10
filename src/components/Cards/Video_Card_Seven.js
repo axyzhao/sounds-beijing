@@ -12,7 +12,7 @@ const Video_Card_Seven = (props) => {
   const setText = (a) => {return null};
 
   const caption = copy["caption"];
-  const imgStyles: CSSProperties = {}
+  const imgStyles: CSSProperties = {border: "2px solid"}
 
   if (mobile) {
     return (
@@ -31,13 +31,13 @@ const Video_Card_Seven = (props) => {
               imgStyles={imgStyles}
               caption={caption}
               setText={setText}
-              label={label1}
+              label=""
               buttonClass="image-small"
             />
             <SoundButton
               sound={sound2}
               image={image2}
-              label={label2}
+              label=""
               imgStyles={imgStyles}
               caption={caption}
               setText={setText}
@@ -76,6 +76,7 @@ const Video_Card_Seven = (props) => {
                   label={label1}
                   buttonClass="image-small"
                 />
+                <div style={{paddingBottom: "40px"}}>
                 <SoundButton
                   sound={sound2}
                   image={image2}
@@ -85,6 +86,7 @@ const Video_Card_Seven = (props) => {
                   setText={setText}
                   buttonClass="image-small"
                 />
+                </div>
                 </div>
                 </g>
             </div>

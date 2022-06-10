@@ -9,6 +9,7 @@ const Video_Card_Ten = (props) => {
   const { video1, lang, video2, sound,
     image, copy, index, label, toc, mobile } = props;
 
+  const imgStyles = {};
   const caption = copy["caption"];
   const setText = (a) => {return null};
   if (mobile) {
@@ -33,10 +34,12 @@ const Video_Card_Ten = (props) => {
               src={video1}
               autoplay={true}
             />
-            <Player
-              src={video2}
-              autoplay={true}
-                />
+            <div style={{paddingBottom: "40px"}}>
+              <Player
+                src={video2}
+                autoplay={true}
+                  />
+            </div>
             </div>
         </div>
     );
@@ -49,10 +52,10 @@ const Video_Card_Ten = (props) => {
 
       <div className="cell" style={{width: "30%"}}>
         <div className="video-container" style={{width: "100%"}}>
-                    <Player
-                      src={video1}
-                      autoplay={true}
-                    />
+                  <Player
+                    src={video1}
+                    autoplay={true}
+                  />
                 </div>
 
               </div>

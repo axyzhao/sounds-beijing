@@ -36,9 +36,9 @@ function App(props)
           renderIndicator={(clickHandler, isSelected, index, label) =>
             {getData(clickHandler, isSelected, index)}}
           renderArrowPrev={(onClickHandler, hasPrev, label) =>
-              hasPrev && (<LeftArrow onClickHandler={onClickHandler} label={label}/>)}
+              hasPrev && (<LeftArrow mobile={mobile} onClickHandler={onClickHandler} label={label}/>)}
           renderArrowNext={(onClickHandler, hasNext, label) =>
-        hasNext && (<RightArrow onClickHandler={onClickHandler} label={label}/>)}
+        hasNext && (<RightArrow mobile={mobile} onClickHandler={onClickHandler} label={label}/>)}
           statusFormatter={(current, total) =>
         (<Progress total={total} current={current}/>)}
           useKeyboardArrows={true}

@@ -19,7 +19,7 @@ const Video_Card_Two = (props) => {
       <div className="card-container">
       <Label caption={caption} toc={toc} />
         <div className="card">
-        
+
           <Title title={copy1["title"]} author={copy1["author"]} />
           <Textbox lang={lang} copy={copy1["text"]} type="tall"/>
           <Player
@@ -28,11 +28,13 @@ const Video_Card_Two = (props) => {
           />
           <Title title={copy2["title"]} author={copy2["author"]} />
           <Textbox lang={lang} copy={copy2["text"]} type="tall"/>
+          <div style={{paddingBottom: "40px"}}>
 
           <Player
             src={video2}
             autoplay={true}
           />
+          </div>
           </div>
       </div>
     );

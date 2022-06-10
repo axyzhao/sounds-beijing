@@ -22,13 +22,15 @@ const Video_Card_Four = (props) => {
               src={video1}
               autoplay={true}
             />
-            
+
             <Title title={copy2["title"]} author={copy2["author"]} />
             <Textbox lang={lang} copy={copy2["text"]} type="tall"/>
-            <Player
-              src={video2}
-              autoplay={true}
-            />
+            <div style={{paddingBottom: "40px"}}>
+              <Player
+                src={video2}
+                autoplay={true}
+              />
+            </div>
         </div>
     </div>
     );

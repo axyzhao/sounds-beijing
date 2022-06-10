@@ -1,9 +1,9 @@
 import left from './left.png';
 
 const LeftArrow = (props) => {
-  const { label, onClickHandler } = props;
+  const { label, onClickHandler, mobile } = props;
 
-  const arrowStyles: CSSProperties = {
+  var arrowStyles: CSSProperties = {
       position: "absolute",
       left: "8px",
       background: "white",
@@ -17,6 +17,29 @@ const LeftArrow = (props) => {
       transform: "translateY(-50%)",
       zIndex: 2,
     }
+  var imgStyles: CSSProperties = {
+    height: "50px", width: "40px"
+  }
+
+  if (mobile) {
+    arrowStyles = {
+        position: "absolute",
+        left: "8px",
+        background: "white",
+        border: "none",
+        top: "50%",
+        width: "30px",
+        height: "60px",
+        border: "solid",
+        borderWidth: "2px",
+        borderColor: "gray",
+        transform: "translateY(-50%)",
+        zIndex: 2,
+      }
+      imgStyles = {
+        height: "30px", width: "20px"
+      }
+  }
 
   return (
     <div className="arrow-container">
@@ -28,7 +51,7 @@ const LeftArrow = (props) => {
           ...arrowStyles,
         }}
       >
-      <img src={left} style={{height: "50px", width: "40px"}} className="arrow" />
+      <img src={left} style={imgStyles} className="arrow" />
 
       </button>
     </div>

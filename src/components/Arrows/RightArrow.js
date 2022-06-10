@@ -1,9 +1,9 @@
 import right from './right.png';
 
 const RightArrow = (props) => {
-  const { label, onClickHandler } = props;
+  const { label, onClickHandler, mobile } = props;
 
-  const arrowStyles: CSSProperties = {
+  var arrowStyles: CSSProperties = {
       position: "absolute",
       right: "8px",
       height: "150px",
@@ -17,6 +17,28 @@ const RightArrow = (props) => {
       transform: "translateY(-50%)",
     }
 
+    var imgStyles = {height: "50px", width: "40px"}
+
+    if (mobile) {
+      arrowStyles = {
+          position: "absolute",
+          right: "8px",
+          background: "white",
+          border: "none",
+          top: "50%",
+          width: "30px",
+          height: "60px",
+          border: "solid",
+          borderWidth: "2px",
+          borderColor: "gray",
+          transform: "translateY(-50%)",
+          zIndex: 2,
+        }
+        imgStyles = {
+          height: "30px", width: "20px"
+        }
+    }
+
   return (
     <div className="arrow-container">
       <button
@@ -27,7 +49,7 @@ const RightArrow = (props) => {
           ...arrowStyles,
         }}
       >
-      <img src={right} style={{height: "50px", width: "40px"}} className="arrow" />
+      <img src={right} style={imgStyles} className="arrow" />
       </button>
     </div>
   );

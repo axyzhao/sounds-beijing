@@ -6,7 +6,8 @@ import { useState } from 'react';
 
 const Sound_Card = (props) => {
 
-  const { images, lang, sounds, captions, labels, copy, index, toc, key } = props;
+  const { images, lang, sounds, captions,
+    labels, copy, index, toc, key, mobile } = props;
   const imgStyles: CSSProperties = {
     height: "200px",
     width: "200px",
@@ -18,7 +19,80 @@ const Sound_Card = (props) => {
   const caption = copy['caption'];
   const title = copy['title'];
   const author = copy['author'];
+  if (mobile) {
+    return (
+      <div className="card-container">
+        <Label className={caption} caption={caption} toc={toc} />
+        <Title title={title} author={author} />
+        <Textbox lang={lang} copy={text} type="long" />
+        <div className="card" style={{"textAlign": "center"}}>
+                <SoundButton
+                  sound={sounds[0]}
+                  image={images[0]}
+                  label={labels[0]}
+                  imgStyles={imgStyles}
+                  caption={captions[0]}
+                  setText={setText}
+                  key={key}
+                  lang={lang}
+                />
+                <SoundButton
+                  sound={sounds[1]}
+                  image={images[1]}
+                  label={labels[1]}
+                  lang={lang}
+                  imgStyles={imgStyles}
+                  caption={captions[1]}
+                  setText={setText}
+                  key={key}
+                />
+                <SoundButton
+                  sound={sounds[2]}
+                  image={images[2]}
+                  label={labels[2]}
+                  lang={lang}
+                  imgStyles={imgStyles}
+                  caption={captions[2]}
+                  setText={setText}
+                  key={key}
 
+                />
+                <SoundButton
+                  sound={sounds[3]}
+                  image={images[3]}
+                  label={labels[3]}
+                  lang={lang}
+                  imgStyles={imgStyles}
+                  caption={captions[3]}
+                  setText={setText}
+                  key={key}
+
+                />
+                <SoundButton
+                  sound={sounds[4]}
+                  image={images[4]}
+                  label={labels[4]}
+                  key={key}
+                  lang={lang}
+                  imgStyles={imgStyles}
+                  caption={captions[4]}
+                  setText={setText}
+                />
+
+                <SoundButton
+                  sound={sounds[5]}
+                  image={images[5]}
+                  label={labels[5]}
+                  key={key}
+                  lang={lang}
+                  imgStyles={imgStyles}
+                  caption={captions[5]}
+                  setText={setText}
+                />
+              </div>
+            </div>
+    );
+  }
   return (
     <div className="card-container">
       <Label className={caption} caption={caption} toc={toc} />

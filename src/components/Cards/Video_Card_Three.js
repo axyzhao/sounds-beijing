@@ -19,10 +19,12 @@ const Video_Card_Three = (props) => {
                 autoplay={true}
               />
               <Textbox lang={lang} copy={copy["text"]} type="tall"/>
-              <Player
-                src={video2}
-                autoplay={true}
-              />
+              <div style={{paddingBottom: "40px"}}>
+                <Player
+                  src={video2}
+                  autoplay={true}
+                />
+              </div>
             </div>
         </div>
     );

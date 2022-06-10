@@ -23,10 +23,12 @@ const Video_Card_Five = (props) => {
                 src={video2}
                 autoplay={true}
               />
-              <Player
-                src={video3}
-                autoplay={true}
-              />
+              <div style={{paddingBottom: "40px"}}>
+                <Player
+                  src={video3}
+                  autoplay={true}
+                />
+              </div>
             </div>
         </div>
     );

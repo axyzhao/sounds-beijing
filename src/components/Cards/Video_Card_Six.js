@@ -11,8 +11,6 @@ const Video_Card_Six = (props) => {
 
   const caption = copy["caption"];
   const imgStyles: CSSProperties = {
-    height: "98%",
-    width: "100%",
     margin: "0 auto",
   }
 
@@ -32,10 +30,13 @@ const Video_Card_Six = (props) => {
                 label={label}
                 buttonClass="image"
               />
-            <Player
-              src={video}
-              autoplay={true}
-            />
+              <div style={{paddingBottom: "40px"}}>
+                <Player
+                  src={video}
+                  autoplay={true}
+                />
+              </div>
+
           </div>
       </div>
     );

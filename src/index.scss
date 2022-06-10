@@ -15,6 +15,7 @@ code {
 .card-container {
   height: 100vh;
   margin: auto;
+  overflow: scroll;
 
   @media screen and (max-width: 600px) {
     overflow: scroll;
@@ -139,7 +140,6 @@ img {
 button {
   border-width: 0px;
   background-color: white;
-  height: 210px;
   &.sound-isActive {
     background-color: #73be73;
     border-radius: 8px;
@@ -156,6 +156,8 @@ button {
     border-radius: 8px;
     color: white;
     font-size: 16px;
+    margin: 12px 0;
+    margin-left: -16px;
 
     &.isActive {
       background-color: #d3d3d3;
@@ -192,7 +194,7 @@ button {
     height: 100%;
   }
   &.image-small {
-    height: 90%;
+    margin-bottom: 64px;
   }
   &.image-big {
     height: 104%;
@@ -286,6 +288,7 @@ footer {
   top: auto;
   display: block;
   width: 100%;
+
   @media screen and (min-width: 600px) {
     position: absolute;
   }
