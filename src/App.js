@@ -3,6 +3,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import "video-react/dist/video-react.css"; // import css
 import { useState } from 'react';
 import { Carousel } from 'react-responsive-carousel';
+import useWindowSize from './Utils/getWindowDim';
 
 import constructChildren from './Children';
 import LeftArrow from './components/Arrows/LeftArrow';
@@ -20,6 +21,8 @@ function App(props)
     clickers.push(val);
   }
   const children = constructChildren(clickers);
+  const [windowWidth] = useWindowSize();
+  const mobile = windowWidth < 600;
 
   return (
     <div>
@@ -29,6 +32,7 @@ function App(props)
           showIndicators={true}
           transitionTime={0}
           autoFocus={true}
+          swipeable={!mobile}
           renderIndicator={(clickHandler, isSelected, index, label) =>
             {getData(clickHandler, isSelected, index)}}
           renderArrowPrev={(onClickHandler, hasPrev, label) =>
