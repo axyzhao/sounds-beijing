@@ -12,7 +12,8 @@ const Video_Card_Seven = (props) => {
   const setText = (a) => {return null};
 
   const caption = copy["caption"];
-  const imgStyles: CSSProperties = {border: "2px solid"}
+  //const imgStyles: CSSProperties = {border: "2px solid"}
+  const imgStyles: CSSProperties = {};
 
   if (mobile) {
     return (
