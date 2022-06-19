@@ -37,7 +37,15 @@ function constructChildren(clickers) {
   const captions = copy["sound_captions"];
   const slides = copy['slides'];
   const toc_captions = slides.map((a) => a["caption"]);
-  const indices = [0, 1,  4,  6,  8, 10, 11, 12, 14, 18, 19, 21, 22, 23, 25];
+
+  const indices = slides
+  .map((element, index) => {
+    if (element['caption'] !== 'nan') {
+      return index;
+    }
+  })
+  .filter(element => element >= 0);
+
   const [windowWidth] = useWindowSize();
   const mobile = windowWidth < 600;
 
@@ -222,6 +230,14 @@ function constructChildren(clickers) {
       lang={lang}
     mobile={mobile}
 />,
+  <Video_Card_Three
+    video1={videos[24][0]}
+    video2={videos[24][1]}
+    copy={slides[28]}
+    toc={toc}
+    lang={lang}
+    mobile={mobile}
+  />,
     <Video_Card_Four
       video1={videos[18][0]}
       video2={videos[18][1]}

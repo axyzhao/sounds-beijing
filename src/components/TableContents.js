@@ -3,7 +3,7 @@ import 'react-dropdown/style.css';
 
 const TableContents = (props) => {
   const { clickers, captions, indices } = props;
-
+  console.log(indices);
   const filteredOptions = captions.filter((elem, i) => indices.indexOf(i) != -1);
   const filteredLinks = clickers.filter((elem, i) => indices.indexOf(i) != -1);
   const defaultOption = "Sounds of Beijing";

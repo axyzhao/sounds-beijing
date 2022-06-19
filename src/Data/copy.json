@@ -164,7 +164,7 @@
         "caption": "Food",
         "title": "Food",
         "author": "Selena Guo, Trevaughn Latimer, Hasani Arnold",
-        "text": "In C-Lou, cook griddles a 'leng mian' wrap with a hiss. In the Guangdong window on Zijing first floor, a chef chops the barbecue pork with a cleaver. In the seafood market formerly on Tsinghua, a shopowner noisily cleans a fish."
+        "text": "In C-Lou, cook griddles a 'leng mian' wrap with a hiss. In the Guangdong window on Zijing first floor, a chef chops the barbecue pork with a cleaver. At hot pot, hungry patrons drop vegetables into a gurgling, boiling pot."
       },
       {
         "caption": "Sports",
@@ -211,7 +211,7 @@
         "text": "Click on an image to hear the sound. Click again to pause the sound."
       },
       {
-        "caption": "Soundscape",
+        "caption": "nan",
         "title": "Soundscape",
         "author": "various scholars",
         "text": "Click on an image to hear the sound. Click again to pause the sound."
@@ -231,7 +231,7 @@
         ]
       },
       {
-        "caption": "Take a guess",
+        "caption": "nan",
         "title": "Can you guess the sound?",
         "author": "Trevaughn Latimer",
         "text": "How well do you know the Sounds of Beijing? Click the image to play the sound and select which option you think made this sound.",
@@ -251,6 +251,12 @@
         "byline2": "",
         "subtitle": "Thank you to all of our friends who made this project possible by sending in their memories.",
         "instruction": "If you have an idea for a page or want to submit your own memories, reach out to either of us."
+      },
+      {
+        "caption": "nan",
+        "title": "Out on the Field",
+        "author": "Miranda Li",
+        "text": "On the left, Jiaheng He demonstrates how to march in the 'phalanx' parade for Tsinghua's alumni weekend. Below, scholars enjoy each other’s company on a pleasant summer evening during campus lockdown."
       }
     ],
     "sound_captions": [
@@ -534,6 +540,12 @@
         "byline2": "",
         "subtitle": "感谢所有通过发送回忆使这个项目成为可能的朋友。",
         "instruction": "如果你有一个值得展览的视频或声音，请联系我们。"
+      },
+      {
+        "caption": "nan",
+        "title": "立足中国",
+        "author": "Miranda Li",
+        "text": "在左边，何佳恒演示了如何在清华校友周末的“方阵”游行。在下面，能看到封校期间的一个惬意的夏日夜晚，享受彼此的陪伴。"
       }
     ],
     "sound_captions": [
