@@ -10,7 +10,7 @@ const SoundButton = (props) => {
   if (lang === "english") {
     defaultText = "Tsinghua is full of sounds and sights. Click on an image to hear its sound. Click again to pause.";
   } else {
-    defaultText = "点击图像可以聆听声音，再次点击则暂停声音。";
+    defaultText = "点击图像可以聆听声音, 再次点击则暂停声音。";
   }
   if (!buttonClass) {
     const buttonClass = null;
