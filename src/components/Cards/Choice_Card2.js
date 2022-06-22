@@ -58,6 +58,7 @@ const Choice_Card2 = (props) => {
                 right={false}
                 image={hiddenImage}
                 button_key={button_key}
+                lang={lang}
               />
             </div>
             <div
@@ -68,6 +69,7 @@ const Choice_Card2 = (props) => {
                 right={false}
                 setText={setText}
                 button_key={button_key}
+                lang={lang}
               />
             </div>
             <div
@@ -79,6 +81,7 @@ const Choice_Card2 = (props) => {
               setText={setText}
               setShow={setShow}
               button_key={button_key}
+              lang={lang}
             />
             </div>
           </div>
@@ -94,6 +97,7 @@ const Choice_Card2 = (props) => {
               right={false}
               setText={setText}
               button_key={button_key}
+              lang={lang}
             />
             </div>
             <div
@@ -104,6 +108,7 @@ const Choice_Card2 = (props) => {
               right={false}
               setText={setText}
               button_key={button_key}
+              lang={lang}
             />
             </div>
             <div
@@ -114,6 +119,7 @@ const Choice_Card2 = (props) => {
               right={false}
               setText={setText}
               button_key={button_key}
+              lang={lang}
             />
             </div>
             </div>

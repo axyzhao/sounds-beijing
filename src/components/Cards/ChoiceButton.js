@@ -2,9 +2,15 @@ import { useState } from 'react';
 import classNames from 'classnames/bind';
 
 const ChoiceButton = (props) => {
-  const { caption, right, setText, image, setShow, button_key } = props;
+  const { caption, right, setText, image, setShow, button_key, lang } = props;
   const rightText = "Correct!";
-  const wrongText = "Wrong! Try picking a different option."
+  var wrongText;
+
+  if (lang === "english") {
+    wrongText = "Wrong! Try picking a different option.";
+  } else {
+    wrongText = "错！再次选另一个选择。"
+  }
   const [status, setStatus] = useState(false);
   const handleClick = () => {
     setStatus(true);

@@ -53,36 +53,42 @@ const Choice_Card = (props) => {
                   setShow={setShow}
                   image={hiddenImage}
                   button_key={button_key}
+                  lang={lang}
                 />
                 <ChoiceButton
                   caption={captions[1]}
                   right={false}
                   setText={setText}
                   button_key={button_key}
+                  lang={lang}
                 />
               <ChoiceButton
                 caption={captions[2]}
                 right={false}
                 setText={setText}
                 button_key={button_key}
+                lang={lang}
               />
               <ChoiceButton
                 caption={captions[3]}
                 right={false}
                 setText={setText}
                 button_key={button_key}
+                lang={lang}
               />
               <ChoiceButton
                 caption={captions[4]}
                 right={false}
                 setText={setText}
                 button_key={button_key}
+                lang={lang}
               />
               <ChoiceButton
                 caption={captions[5]}
                 right={false}
                 setText={setText}
                 button_key={button_key}
+                lang={lang}
               />
           </div>
       </div>
